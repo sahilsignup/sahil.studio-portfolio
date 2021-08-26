@@ -97,8 +97,23 @@ body {
     user-select: none;
 }
 
-/* Responsive Design */
 
+
+/* Animations */
+.home-sahil-icon:hover {
+    filter: drop-shadow(0px 0px 2px #EC8609);
+    transform: scale(.95);
+}
+
+.socials-item:hover {
+    color: #EC8609;
+    transform: translate3d(5, 0.2em, 10);
+    background-position: 0 100%;
+}
+
+
+
+/* Responsive Design */
 @media screen and (min-width:950px) {
     .home-block {
         width: 90vw;
@@ -116,14 +131,20 @@ body {
     }
 }
 
-/* Animations */
-.home-sahil-icon:hover {
-    filter: drop-shadow(0px 0px 2px #EC8609);
-    transform: scale(.95);
+@media screen and (max-height:950px) {
+    .home-block {
+        width: 90vw;
+        max-width: 1200px;
+        height: 80vh;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+
+    .home-sahil-icon {
+        width: 400px;
+    }
 }
 
-.socials-item:hover {
-    color: #EC8609;
-    transform: translate3d(5, 0.2em, 10);
-    background-position: 0 100%;
-}
