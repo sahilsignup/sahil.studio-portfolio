@@ -1,0 +1,155 @@
+/* Master Styling */
+*, *::before, *::after {
+    box-sizing: border-box;
+    transition: .5s;
+    
+}
+
+body {
+    background-color: #0a0a0a;
+    color: #F1F1F1;
+    font-family: 'Josefin Sans', sans-serif;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    text-shadow: 4px 4px 8px #0A0A0A;
+    filter: drop-shadow(4px 4px 8px #0A0A0A);
+}
+
+
+
+/* Elements (Home Block) */
+.home-block {
+    background-color: #141414;
+    width: 75vw;
+    height: 90vh;
+    border-radius: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+}
+
+.left-wrapper {
+    display: flex;
+    flex-direction: row;
+    text-align: end;
+}
+
+.right-wrapper {
+    display: flex;
+    flex-direction: row;
+    text-align: end;
+}
+
+.home-text {
+    font-family: Aero;
+    line-height: 1;
+    margin: 0;
+    padding-top: 50px;
+    text-align: center;
+    user-select: none;
+    
+}
+
+.home-text > h1 {
+    font-size: 150px;
+    color: #EC8609;
+    line-height: .4;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.home-text > h2 {
+    font-size: 90px;
+    color: #F9AC4E;
+    font-weight: lighter;
+    margin: 50px;
+    padding-left: 30px;
+    line-height: 70px;
+    font-size: 150px;
+    color: #EC8609;
+    line-height: .8;
+    margin: 0;
+    padding: 0;
+}
+
+.home-sahil-icon {
+    width: 300px;
+    user-select: none;
+    cursor: pointer;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.socials-list {
+    list-style: none;
+    flex-direction: row;
+}
+
+.socials-item {
+    font-family: Alata;
+    font-size: 20px;
+    line-height: .4;
+    text-align: center;
+    list-style: none;
+    display: inline;
+    user-select: all;
+}
+
+.social-icon {
+    position: static;
+    user-select: none;
+}
+
+
+
+/* Animations */
+.home-sahil-icon:hover {
+    filter: drop-shadow(0px 0px 2px #EC8609);
+    transform: scale(.95);
+}
+
+.socials-item:hover {
+    color: #EC8609;
+    transform: translate3d(5, 0.2em, 10);
+    background-position: 0 100%;
+}
+
+
+
+/* Responsive Design */
+@media screen and (min-width:950px) {
+    .home-block {
+        width: 90vw;
+        max-width: 1200px;
+        height: 60vh;
+        border-radius: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+
+    .home-sahil-icon {
+        width: 500px;
+    }
+}
+
+@media screen and (max-height:950px) {
+    .home-block {
+        width: 90vw;
+        max-width: 1200px;
+        height: 80vh;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+
+    .home-sahil-icon {
+        width: 400px;
+    }
+}
