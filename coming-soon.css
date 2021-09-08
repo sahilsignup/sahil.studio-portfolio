@@ -24,9 +24,9 @@ a {
 /* Sidebar */
 #sidebar {
     background-color: #141414;
-    position: fixed;
+    position: absolute;
     padding-top: 20px;
-    height: 100vh;
+    height: 100%;
     width: 100px;
     text-align: center;
     top: 0;
@@ -36,6 +36,11 @@ a {
     justify-content: center;
     align-items: center;
     transition: ease-in-out .25s;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100px;
 }
 
 #sidebar a {
@@ -54,7 +59,7 @@ a {
 
 #sidebar-sahil-icon {
     width: 48px;
-    transition: ease-in-out .25s;    transition: ease-in-out .25s;
+    transition: ease-in-out .25s;
 }
 
 #sidebar-sahil-icon:hover, #sidebar-sahil-icon::before, #sidebar-sahil-icon::after {
@@ -99,28 +104,15 @@ a {
 
 
 /* Elements (Home Block) */
-.home-block {
+#home-block {
     background-color: #141414;
     width: 75vw;
-    height: 90vh;
+    height: 75vh;
     border-radius: 75px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    flex-direction: column-reverse;
-    flex-wrap: wrap;
-}
-
-.left-wrapper {
-    display: flex;
-    flex-direction: row;
-    text-align: end;
-}
-
-.right-wrapper {
-    display: flex;
-    flex-direction: row;
-    text-align: end;
+    justify-content: center;
+    margin-left: 100px;
 }
 
 .home-text {
@@ -156,80 +148,94 @@ a {
     padding: 0;
 }
 
-.home-sahil-icon {
-    width: 300px;
-    user-select: none;
-    cursor: pointer;
-    clip-path: circle(50% at 50% 50%);
-}
-
-.socials-list {
-    list-style: none;
-    flex-direction: row;
-}
-
-.socials-item {
-    font-family: Alata;
-    font-size: 20px;
-    line-height: .4;
-    text-align: center;
-    list-style: none;
-    display: inline;
-    user-select: all;
-}
-
-.social-icon {
-    position: static;
-    user-select: none;
-}
 
 
+/* Responsive */
+@media only screen and (max-width: 1200px) {
+    #sidebar {
+        padding: 0px;
+        height: 75px;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        line-height: .6;
+    }
+    
+    #sidebar a {
+        padding: 0;
+        margin: 0;
+    }
 
-/* Animations */
-.home-sahil-icon:hover {
-    filter: drop-shadow(0px 0px 2px #EC8609);
-    transform: scale(.95);
-}
-
-.socials-item:hover {
-    color: #EC8609;
-    transform: translate3d(5, 0.2em, 10);
-    background-position: 0 100%;
-}
-
-
-
-/* Responsive Design */
-@media screen and (min-width:950px) {
-    .home-block {
-        width: 90vw;
-        max-width: 1200px;
-        height: 60vh;
-        border-radius: 150px;
+    #content {
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
-        flex-direction: row;
+        margin-left: 0px;
     }
 
-    .home-sahil-icon {
-        width: 500px;
+    #home-block {
+        height: 85vh;
+        width: 90vw;
+        border-radius: 50px;
+        margin: 115px 0 50px 0;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+
+    #home-text {
+        z-index: 1;
+        margin: 0;
+        padding: 0;
+    }
+
+   .home-text > h1 {
+        font-size: 25vw;
+        margin: 0 0 6vh 0;
+        padding: 0;
+    }
+
+    .home-text > h2 {
+        font-size: 15vw;
+        margin: 0;
+        padding: 0;
     }
 }
 
-@media screen and (max-height:950px) {
-    .home-block {
-        width: 90vw;
-        max-width: 1200px;
-        height: 80vh;
-        border-radius: 100px;
-        display: flex;
+@media only screen and (max-height: 800px) {
+    #home-block {
+        margin: 0 0 15vh 0;
+        height: 85vh;
+        margin: 75px 0 0 0;
+        flex-direction: column-reverse;
         align-items: center;
-        justify-content: space-evenly;
-        flex-direction: row;
+        justify-content: center;
     }
 
-    .home-sahil-icon {
-        width: 400px;
+    #sahil-icon {
+        height: 40vh;
+        min-height: 100px;
+        z-index: -1;
+    }
+
+    #home-text {
+        z-index: 1;
+        margin: 0;
+        padding: 0;
+    }
+
+    #home-text > h1 {
+        font-size: 20vh;
+        margin: 0 0 6vh 0;
+        padding: 0;
+    }
+
+    #home-text > h2 {
+        font-size: 10vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    .socials-item {
+        font-size: 1em;
     }
 }
