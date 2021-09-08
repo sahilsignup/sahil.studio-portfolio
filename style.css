@@ -21,7 +21,7 @@ a {
 /* Sidebar */
 #sidebar {
     background-color: #141414;
-    position: fixed;
+    position: absolute;
     padding-top: 20px;
     height: 100%;
     width: 100px;
@@ -33,6 +33,11 @@ a {
     justify-content: center;
     align-items: center;
     transition: ease-in-out .25s;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100px;
 }
 
 #sidebar a {
@@ -101,6 +106,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 100px;
 }
 
 #home-block {
@@ -193,8 +199,37 @@ a {
 
 
 /* Responsive */
-@media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
+@media only screen and (max-width: 1400px) {
+    #sidebar {
+        padding: 0px;
+        height: 75px;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
     }
-  }
+    
+    #sidebar a {
+        padding: 0;
+        margin: 0;
+    }
+
+    #content {
+        align-items: center;
+        display: grid;
+        align-items: center;
+        margin-left: 0px;
+    }
+
+    #home-block {
+        margin-top: 75px;
+        width: 75vw;
+        height: 85vh;
+        margin: none;
+        flex-direction: column-reverse;
+    }
+
+    #sahil-icon {
+        height: 400px;
+    }
+}
