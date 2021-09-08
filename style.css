@@ -233,3 +233,46 @@ a {
         height: 400px;
     }
 }
+
+@media only screen and (max-width: 800px) {
+    #sidebar {
+        position: relative;
+        float: none;
+        padding: 0px;
+        height: 75px;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    #sidebar a {
+        padding: 0;
+        margin: 0;
+    }
+
+    #content {
+        align-items: center;
+        display: grid;
+        align-items: center;
+        margin-left: 0px;
+        justify-items: flex-start;
+        align-items: center;
+    }
+
+    #home-block {
+        margin-top: 75px;
+        width: 75vw;
+        height: 85vh;
+        margin: none;
+        flex-direction: column-reverse;
+        background-color: #0A0A0A;
+    }
+
+    #sahil-icon {
+        height: 300px;
+        margin-top: 200px;
+        float: none;
+        
+    }
+}
