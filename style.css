@@ -207,6 +207,7 @@ a {
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+        line-height: .6;
     }
     
     #sidebar a {
@@ -215,64 +216,84 @@ a {
     }
 
     #content {
-        align-items: center;
-        display: grid;
+        display: flex;
         align-items: center;
         margin-left: 0px;
     }
 
     #home-block {
-        margin-top: 75px;
-        width: 75vw;
         height: 85vh;
-        margin: none;
+        width: 90vw;
+        border-radius: 50px;
+        margin: 115px 0 50px 0;
         flex-direction: column-reverse;
+        justify-content: flex-end;
     }
 
     #sahil-icon {
-        height: 400px;
+        height: 30vw;
+        min-height: 200px;
+        z-index: -1;
+    }
+
+    #home-text {
+        z-index: 1;
+        margin: 0;
+        padding: 0;
+    }
+
+    #home-text > h1 {
+        font-size: 20vw;
+        margin: 0 0 6vh 0;
+        padding: 0;
+    }
+
+    #home-text > h2 {
+        font-size: 10vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    .socials-item {
+        font-size: 1em;
     }
 }
 
-@media only screen and (max-width: 800px) {
-    #sidebar {
-        position: relative;
-        float: none;
-        padding: 0px;
-        height: 75px;
-        width: 100%;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-    }
-    
-    #sidebar a {
-        padding: 0;
-        margin: 0;
-    }
-
-    #content {
-        align-items: center;
-        display: grid;
-        align-items: center;
-        margin-left: 0px;
-        justify-items: flex-start;
-        align-items: center;
-    }
-
+@media only screen and (max-height: 800px) {
     #home-block {
-        margin-top: 75px;
-        width: 75vw;
+        margin: 0 0 15vh 0;
         height: 85vh;
-        margin: none;
+        margin: 75px 0 0 0;
         flex-direction: column-reverse;
-        background-color: #0A0A0A;
+        align-items: center;
+        justify-content: center;
     }
 
     #sahil-icon {
-        height: 300px;
-        margin-top: 200px;
-        float: none;
-        
+        height: 40vh;
+        min-height: 100px;
+        z-index: -1;
+    }
+
+    #home-text {
+        z-index: 1;
+        margin: 0;
+        padding: 0;
+    }
+
+    #home-text > h1 {
+        font-size: 20vh;
+        margin: 0 0 6vh 0;
+        padding: 0;
+    }
+
+    #home-text > h2 {
+        font-size: 10vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    .socials-item {
+        font-size: 1em;
     }
 }
