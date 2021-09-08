@@ -1,65 +1,104 @@
 /* Master Styling */
 *, *::before, *::after {
     box-sizing: border-box;
-    transition: ease-in-out .25s;
-    
 }
 
 body {
     background-color: #0a0a0a;
     color: #F1F1F1;
-    font-family: Poppins;
-    display: grid;
-    justify-items: center;
-    min-height: 90vh;
     text-shadow: 4px 4px 8px #0A0A0A;
     filter: drop-shadow(4px 4px 8px #0A0A0A);
+    margin: 0;
+    min-height: 100vh;
 }
 
 a {
     text-decoration: none;
 }
 
-.navbar {
-    width: 97vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 10 0 10;
+
+
+/* Sidebar */
+#sidebar {
+    background-color: #141414;
+    position: fixed;
+    padding-top: 20px;
+    height: 100%;
+    width: 100px;
     text-align: center;
-}
-
-.navbar a {
-    color: #F9AC4E;
-}
-
-.navbar a:hover {
-    font-weight: 900;
-}
-  
-.navbar ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+    top: 0;
+    left: 0px;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    transition: ease-in-out .25s;
 }
-  
-.navbar .sahilstudio {
-    display: block;
+
+#sidebar a {
+    padding: 20px 0px 20px 0px;
+    text-decoration: none;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 700;
     color: #EC8609;
-    font-size: 40px;
-}
-  
-.navbar ul li a {
-    color: #F9AC4E;
-    padding: 24px;
     display: block;
 }
 
+#sidebar a:hover {
+    cursor: default;
+}
+
+#sidebar-sahil-icon {
+    width: 48px;
+    transition: ease-in-out .25s;    transition: ease-in-out .25s;
+}
+
+#sidebar-sahil-icon:hover, #sidebar-sahil-icon::before, #sidebar-sahil-icon::after {
+    width: 64px;
+    transition: ease-in-out .25s;
+    cursor: pointer;
+}
+
+#sidebar-docs-icon {
+    width: 48px;
+    transition: ease-in-out .25s;
+}
+
+#sidebar-docs-icon:hover, #sidebar-docs-icon::before, #sidebar-docs-icon::after {
+    width: 64px;
+    transition: ease-in-out .25s;
+    cursor: pointer;
+}
+
+#sidebar-my-work-icon {
+    width: 48px;
+    transition: ease-in-out .25s;
+}
+
+#sidebar-my-work-icon:hover, #sidebar-my-work-icon::before, #sidebar-my-work-icon::after {
+    width: 64px;
+    transition: ease-in-out .25s;
+    cursor: pointer;
+}
+
+#sidebar-youtube-icon {
+    width: 48px;
+    transition: ease-in-out .25s;
+}
+
+#sidebar-youtube-icon:hover, #sidebar-youtube-icon::before, #sidebar-youtube-icon::after {
+    width: 64px;
+    transition: ease-in-out .25s;
+    cursor: pointer;
+}
+
+
+
+/* Documents */
 .doc-list {
-    width: 97vw;
-    height: 90vh;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-content: flex-start;
@@ -75,10 +114,12 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: ease-in-out .25s;
 }
 
 .doc:hover {
     transform:scale(1.05);
+    transition: ease-in-out .25s;
 }
 
 .doc-info {
@@ -90,6 +131,9 @@ a {
     flex-direction: column;
 }
 
+
+
+/* Document Text */
 .doc-title  {
     color: #F1F1F1;
     margin: 15px 0px 15px 0px;
@@ -116,16 +160,19 @@ a {
     line-height: 0px;
     top: 0;
     position: relative;
-    transition: ease 0.5s;
+    transition: ease-in-out .25s;
 }
 
+
+
+/* External Links */
 .ext-view-rect {
     background-color: #EC8609;
     border-radius: 10px;
     margin: 5px 15px 5px 15px;
     top: 0;
     position: relative;
-    transition: ease 0.5s;
+    transition: ease-in-out .25s;
 }
 
 .ext-view-rect:hover {
@@ -138,7 +185,7 @@ a {
     margin: 5px 15px 10px 15px;
     top: 0;
     position: relative;
-    transition: ease 0.5s;
+    transition: ease-in-out .25s;
 }
 
 .ext-submit-rect:hover {
@@ -158,6 +205,3 @@ a {
     font-style: normal;
     font-weight: 600;
 }
-
-/* Elements */
-
