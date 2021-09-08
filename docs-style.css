@@ -19,9 +19,10 @@ a {
 
 
 /* Sidebar */
+/* Sidebar */
 #sidebar {
     background-color: #141414;
-    position: fixed;
+    position: absolute;
     padding-top: 20px;
     height: 100%;
     width: 100px;
@@ -33,6 +34,11 @@ a {
     justify-content: center;
     align-items: center;
     transition: ease-in-out .25s;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100px;
 }
 
 #sidebar a {
@@ -51,7 +57,7 @@ a {
 
 #sidebar-sahil-icon {
     width: 48px;
-    transition: ease-in-out .25s;    transition: ease-in-out .25s;
+    transition: ease-in-out .25s;
 }
 
 #sidebar-sahil-icon:hover, #sidebar-sahil-icon::before, #sidebar-sahil-icon::after {
@@ -103,6 +109,7 @@ a {
     justify-content: center;
     align-content: flex-start;
     flex-wrap: wrap;
+    padding: 0px 50px 50px 50px;
 }
 
 .doc {
@@ -204,4 +211,67 @@ a {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
+}
+
+
+
+/* Responsive */
+@media only screen and (max-width: 1200px) {
+    #sidebar {
+        padding: 0px;
+        height: 75px;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        line-height: .6;
+    }
+    
+    #sidebar a {
+        padding: 0;
+        margin: 0;
+    }
+
+    .doc-list {
+        padding: 50px 0 50px 0;
+    }
+}
+
+@media only screen and (max-height: 1000px) {
+    #home-block {
+        margin: 0 0 15vh 0;
+        height: 85vh;
+        margin: 75px 0 0 0;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #sahil-icon {
+        height: 40vh;
+        min-height: 100px;
+        z-index: -1;
+    }
+
+    #home-text {
+        z-index: 1;
+        margin: 0;
+        padding: 0;
+    }
+
+    #home-text > h1 {
+        font-size: 20vh;
+        margin: 0 0 6vh 0;
+        padding: 0;
+    }
+
+    #home-text > h2 {
+        font-size: 10vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    .socials-item {
+        font-size: 1em;
+    }
 }

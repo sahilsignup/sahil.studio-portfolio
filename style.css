@@ -199,7 +199,7 @@ a {
 
 
 /* Responsive */
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1200px) {
     #sidebar {
         padding: 0px;
         height: 75px;
@@ -243,13 +243,13 @@ a {
     }
 
     #home-text > h1 {
-        font-size: 20vw;
+        font-size: 25vw;
         margin: 0 0 6vh 0;
         padding: 0;
     }
 
     #home-text > h2 {
-        font-size: 10vw;
+        font-size: 15vw;
         margin: 0;
         padding: 0;
     }
