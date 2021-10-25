@@ -100,26 +100,6 @@ a {
 }
 
 
-/* Disclaimer */
-.disclaimer {
-    background-color: #1F1F1F;
-    width: 80vw;
-    height: 120px;
-    margin: 50px 15px 50px 0px;
-    padding: 5px 5px 5px 0px;
-    box-shadow: 8px 8px 0px #141414;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition: ease-in-out .25s;
-    color: #EC8609;
-    font-size: 20px;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 800;
-    line-height: 1;
-}
-
 
 /* Documents */
 .doc-list {
@@ -137,7 +117,6 @@ a {
     width: 300px;
     height: 500px;
     margin: 50px;
-    margin-top: 0px;
     box-shadow: 20px 20px 0px #141414;
     display: flex;
     flex-direction: column;
