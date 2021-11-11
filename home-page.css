@@ -336,13 +336,6 @@ animation-duration: 11s;
     flex-direction: column;
 }
 
-#socials-item {
-    background-color: #F9AC4E;
-    border-radius: 50px;
-    padding: 5px 75px 5px 75px;
-    margin: 0px 15px 0px 15px;
-}
-
 .socials-item {
     margin: 15px;
     padding: 9px 33px 9px 33px;
@@ -364,7 +357,6 @@ animation-duration: 11s;
 .social-icon {
     font-size: 10px;
     width: 30px;
-    height: 30px;
     color: #F1F1F1;
     position: static;
 }
@@ -390,113 +382,48 @@ animation-duration: 11s;
     transform: scale(.95);
 }
 
-/* Responsive
-@media only screen and (max-width: 1200px) {
-    #sidebar {
-        padding: 0px;
-        height: 75px;
-        width: 100%;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        line-height: .6;
-    }
-    
-    #sidebar a {
-        padding: 0;
-        margin: 0;
+/* Responsive */
+@media only screen and (max-width: 600px) {
+    .intro-text {
+        font-size: 30vw;
+        margin-left: 10vw;
     }
 
-    #content {
-        display: flex;
-        align-items: center;
-        margin-left: 0px;
+    .intro-text-2 {
+        font-size: 20vw;
+        margin-top: 60vw;
     }
 
-    #home-block {
-        height: 85vh;
-        width: 90vw;
-        border-radius: 50px;
-        margin: 115px 0 50px 0;
+    .home-emoji-film {
+        font-size: 24vw;
+        transform-origin: center;
+        margin-left: 55vw;
+        margin-bottom: 20vw;
     }
 
-    
-    #home-introduction {
-        margin-top: 10px;
-        min-width: 97%;
-    }
-
-
-    #sahil-icon {
-        height: 30vw;
-        min-height: 200px;
-        z-index: -1;
-    }
-
-    #home-text {
-        z-index: 1;
-        margin: 0 auto;
-        padding: 0 auto;
-    }
-
-    #home-text > h1 {
-        font-size: 25vw;
-        margin: 0 0 6vh 0;
-        padding: 0;
-    }
-
-    #home-text > h2 {
+    .home-emoji-compass {
         font-size: 15vw;
-        margin: 0;
-        padding: 0;
-    }
-
-}
-
-@media only screen and (max-width: 800px) {
-    #home-block {
-        margin: 0 0 15vh 0;
-        height: 85vh;
-        margin: 75px 0 0 0;
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #sahil-icon {
-        height: 40vh;
-        min-height: 100px;
-        z-index: -1;
-    }
-
-    #home-text {
-        z-index: 1;
-        margin: 0;
-        padding: 0;
-    }
-
-    #home-introduction {
-        margin-top: 0px;
+        margin-left: 13vw;
+        margin-bottom: 37vw;
     }
 
 
-    #home-text > h1 {
-        font-size: 20vh;
-        margin: 0 0 6vh 0;
-        padding: 0;
+    .home-emoji-compass-small {
+        font-size: 5vw;
+        margin-left: 40vw;
+        margin-bottom: 39vw;
+
     }
 
-    #home-text > h2 {
-        font-size: 10vh;
-        margin: 0;
-        padding: 0;
+    #socials-list {
+        margin-top: 40vw;
     }
 
     .socials-item {
-        font-size: 1em;
-        display: grid;
-        place-content: center;
-        place-items: center;
-        display: flex;
+        font-size: 5vw;
     }
-} */
+
+    .social-icon {
+        width: 6vw;
+    }
+}
