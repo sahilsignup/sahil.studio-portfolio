@@ -30,7 +30,7 @@ body {
     padding: 0;
     /* margin: 0 auto; */
     /* filter: drop-shadow(4px 4px 1px #0A0A0A); */
-    overflow: hidden;
+    overflow: auto;
     display: flex;
     flex-direction: column;
     margin-top:50px;
