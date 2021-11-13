@@ -118,13 +118,10 @@ body {
 .disclaimer {
     background-color: #1F1F1F;
     width: 100vw;
-    margin: 50px 15px 50px 0px;
+    margin: 50px 50px 50px 50px;
     padding: 15px 15px 15px 15px;
     box-shadow: 10px 10px 0px #221E228b;
     filter: drop-shadow(0px 0px 9px #EC8609);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     transition: ease-in-out .25s;
     color: #EC8609;
     font-size: 20px;
@@ -134,24 +131,20 @@ body {
     line-height: 1;
 }
 
-
 /* Documents */
 .doc-list {
     width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-content: flex-start;
     flex-wrap: wrap;
-    padding: 0px 50px 50px 50px;
 }
 
 .doc {
     background: linear-gradient(45deg, #0A0A0A, #221E22);
     width: 300px;
     height: 500px;
-    margin: 50px;
-    margin-top: 0px;
     box-shadow: 10px 10px 0px #221E22,
                 20px 20px 0px #221E224b;
     filter: drop-shadow(0px 0px 9px #EC8609);
@@ -159,6 +152,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     transition: ease-in-out .25s;
+    margin: 30px;
 }
 
 .doc:hover {
@@ -252,8 +246,6 @@ body {
     font-weight: 600;
 }
 
-
-
 /* Responsive */
 @media only screen and (max-width: 400px) {
 
@@ -315,7 +307,7 @@ body {
         background-size: 110%; /* remove uato for desktop */
         background-attachment: fixed;
         background-position: bottom right;
-        overflow: hidden;
+        overflow: auto;
     }
 
     #socials-list {
@@ -331,6 +323,6 @@ body {
         background-size: 100%; /* remove uato for desktop */
         background-attachment: fixed;
         background-position: bottom right;
-        overflow: hidden;
+        overflow: auto;
     }
 }

@@ -450,7 +450,7 @@ body {
         background-size: 110%; /* remove uato for desktop */
         background-attachment: fixed;
         background-position: bottom right;
-        overflow: hidden;
+        overflow: auto;
     }
 
     #socials-list {
@@ -466,6 +466,6 @@ body {
         background-size: 100%; /* remove uato for desktop */
         background-attachment: fixed;
         background-position: bottom right;
-        overflow: hidden;
+        overflow: auto;
     }
 }
