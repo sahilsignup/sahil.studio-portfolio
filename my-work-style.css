@@ -20,7 +20,7 @@ a {
 body {
 
     background-image: url("/MEDIA/test.svg");
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size: auto 100%; /* remove uato for desktop */
     background-attachment: fixed;
     background-position: right;
