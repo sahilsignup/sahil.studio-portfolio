@@ -1,0 +1,66 @@
+/* Master Styling */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    cursor: none;
+    
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+::selection {
+    background: #0A0A0A;
+}
+
+::-moz-selection {
+    background: #0A0A0A;
+}
+
+/* Scrollbar */
+
+*::-webkit-scrollbar {
+    width: 8px;
+    background-color: #1D1923;
+}
+
+*::-webkit-scrollbar-track {
+    border-radius: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+    height: 56px;
+    border-radius: 8px;
+    background-clip: border-box;
+    background-color: #F8AB4C;
+    box-shadow: 0px 0px 33px 3px #EEA74D;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: #F8AB4C;
+}
+
+/* URLs */
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:focus-visible {
+    /* background-color: #F1F1F13b; */
+    /* padding: 8px; */
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 99;
+}
+
+a:hover {
+    cursor:pointer;
+    z-index: 9999999999999999;
+}
+
+*:focus:not(.focus-visible) {
+    outline: none;
+}     

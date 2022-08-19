@@ -1,0 +1,114 @@
+/* Animations (Keyframes) */
+
+@keyframes fadein {
+    0% { opacity: 0; margin-top: 110px; }
+    22% { opacity: 0; margin-top: 75px; }
+    100% { opacity: 1; margin-top: 0px; }
+}
+
+@-webkit-keyframes fadein {
+    0% { opacity: 0; margin-top: 110px; }
+    22% { opacity: 0; margin-top: 75px; }
+    100% { opacity: 1; margin-top: 0px; }
+}
+
+@keyframes fadein3 {
+    0% { opacity: 0; }
+    22% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadein3 {
+    0% { opacity: 0; }
+    22% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadein4 {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadein4 {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeinnav {
+    0% { opacity: 0; margin-bottom: 110px; }
+    100% { opacity: 1; margin-top: 0px; }
+}
+
+@-webkit-keyframes fadeinnav {
+    0% { opacity: 0; margin-bottom: 110px; }
+    100% { opacity: 1; margin-top: 0px; }
+}
+
+@keyframes fadein2 {
+    0% { opacity: 0; }
+    66% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadein2 {
+    0% { opacity: 0; }
+    66% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeinbgtext {
+    0% { opacity: 0; }
+    33% { opacity: 0; }
+    100% { opacity: 11%; }
+}
+
+@-webkit-keyframes fadeinbgtext {
+    0% { opacity: 0; }
+    33% { opacity: 0; }
+    100% { opacity: 11%; }
+}
+
+@keyframes fadeinbgimg {
+    0% { opacity: 0; }
+    11% { opacity: 0; }
+    100% { opacity: 11%; }
+}
+
+@-webkit-keyframes fadeinbgimg {
+    0% { opacity: 0; }
+    11% { opacity: 0; }
+    100% { opacity: 11%; }
+}
+
+@keyframes fade-in-cursor {
+    0% { opacity: 0; }
+    33% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-webkit-keyframes fade-in-cursor {
+    0% { opacity: 0; }
+    33% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.animate-in {
+    -webkit-animation: fadeIn .5s ease-in;
+    animation: fadeIn .5s ease-in;
+}
+
+.animate-out {
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+    opacity: 0;
+}
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

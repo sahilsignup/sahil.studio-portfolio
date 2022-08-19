@@ -1,0 +1,104 @@
+/* BG Elements */
+
+#bg-elements {
+    position: absolute;
+    width: auto;
+    height: 100%;
+}
+
+/* BG Noise */
+
+#bg-noise {
+    background-image: url("/ASSETS/tv-noise-01.gif");
+    height: 100%;
+    width: 100%;
+    opacity: 08%;
+    object-fit: scale-down;
+    background-size: auto;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    -o-object-fit: cover;
+    resize: none;
+    
+    
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+
+/* Marquees */
+
+.marquees {
+    display: flex;
+    flex-direction: column;
+    opacity: 11%;
+    -webkit-animation: fadeinbgtext 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadeinbgtext 1s; /* Firefox < 16 */
+    -ms-animation: fadeinbgtext 1s; /* Internet Explorer */
+    -o-animation: fadeinbgtext 1s; /* Opera < 12.1 */
+    animation: fadeinbgtext 1s;
+    z-index: 20;
+
+    user-select: none;
+}
+
+.marquee {
+    width: 100%;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 20vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+}
+
+.marquee .text {
+    display: inline-block;
+    text-indent: 0;
+    animation: marquee 15s linear infinite;
+    font-weight: 500;
+    font-size: 15vw;
+    line-height: 125%;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    color: #F1F1F1;
+    
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate(0%, 0);
+    }
+    
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+.marquee-02 {
+    width: 100%;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 20vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+}
+
+.marquee-02 .text {
+    display: inline-block;
+    padding-left: 4.4rem;
+    text-indent: 0;
+    animation: marquee 20s linear infinite;
+    font-weight: 500;
+    font-size: 15vw;
+    line-height: 125%;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    color: #0A0A0A;
+    text-shadow: -1px -1px 0 #F1F1F1, 1px -1px 0 #F1F1F1, -1px 1px 0 #F1F1F1, 1px 1px 0 #F1F1F1;
+}
