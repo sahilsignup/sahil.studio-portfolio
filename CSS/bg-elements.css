@@ -37,8 +37,8 @@
     -ms-animation: fadeinbgtext 1s; /* Internet Explorer */
     -o-animation: fadeinbgtext 1s; /* Opera < 12.1 */
     animation: fadeinbgtext 1s;
-    z-index: 20;
-
+    z-index: 1;
+    position: fixed;
     user-select: none;
 }
 

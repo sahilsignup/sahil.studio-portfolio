@@ -20,6 +20,8 @@
     -ms-animation: fadeinnav 1s; /* Internet Explorer */
     -o-animation: fadeinnav 1s; /* Opera < 12.1 */
     animation: fadeinnav 1s;
+
+    pointer-events: none;
 }
 
 .navbar-icon {
@@ -30,6 +32,8 @@
     z-index: 10;
     cursor: pointer;
     transition: ease-in-out .5s;
+    
+    pointer-events: all;
 }
 
 .navbar-icon:hover {

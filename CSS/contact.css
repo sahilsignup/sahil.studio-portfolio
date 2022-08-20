@@ -147,7 +147,6 @@ button:active {
     justify-content: center;
 
     margin-top: 180px;
-
     
     -webkit-animation: fade-in-cursor 2s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fade-in-cursor 2s; /* Firefox < 16 */
@@ -170,10 +169,6 @@ button:active {
     align-items: center;
     justify-content: center;
     transition: ease-in-out .25s;
-}
-
-.email {
-    pointer-events: none;
 }
 
 .social-media-icon {
@@ -278,6 +273,66 @@ button:active {
 
 @media only screen and (max-width: 800px) {
     #content {
+        margin-top: 300px;
+    }
+}
+
+@media only screen and (max-height: 1000px) {
+    #contact-other {
         margin-top: 200px;
+    }
+
+    #contact-form {
+        padding-bottom: 400px;
+    }
+}
+
+@media only screen and (max-height: 900px) {
+    #contact-other {
+        position: relative;
+        padding-top: 100px;
+    }
+
+    #contact-form {
+        position: relative;
+    }
+
+    #test-form {
+        position: absolute;
+        padding-top: 40px;
+    }
+}
+
+@media only screen and (max-height: 750px) {
+    #contact-other {
+        position: relative;
+        padding-top: 500px;
+    }
+
+    #contact-form {
+        margin-top: 200px;
+        position: relative;
+    }
+
+    #test-form {
+        position: absolute;
+        padding-top: 40px;
+    }
+}
+
+@media only screen and (max-height: 500px) {
+    #contact-other {
+        position: relative;
+        padding-top: 700px;
+    }
+
+    #contact-form {
+        margin-top: 200px;
+        position: relative;
+    }
+
+    #test-form {
+        position: absolute;
+        padding-top: 40px;
     }
 }
