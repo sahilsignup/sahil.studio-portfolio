@@ -13,7 +13,7 @@
 body {
     background-image: url("/ASSETS/site-bg.png");
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-attachment: fixed;
     background-position: right;
     overflow-x: hidden;
