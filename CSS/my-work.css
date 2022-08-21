@@ -1,33 +1,23 @@
-/* Page Content */
+body {
+    margin: 0;
+    padding: 0;
+}
 
+/* Page Content */
 #content {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
     
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    
     z-index: 2;
 }
 
 /* Page */
-
-body {
-    background-image: url("/ASSETS/site-bg.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: right;
-    overflow-x: hidden;
-    /* margin: 0;
-    padding: 0; */
-    /* margin: 0 auto;
-    /* filter: drop-shadow(4px 4px 1px #0A0A0A); */
-    /* overflow: hidden; */
-}
 
 /* Docs Whitespace (Below) */
 .docs-whitespace {
@@ -44,11 +34,11 @@ body {
 
 /* Documents */
 .doc-list {
-    width: 100vw;
-    height: 100vh;
+    width: 80vw;
+    height: 100%;
     display: flex;
     justify-content: center;
-    align-content: flex-start;
+    align-content: center;
     flex-wrap: wrap;
     padding-top: 16px;
 }
@@ -102,13 +92,14 @@ body {
     align-items: center;
     justify-content: center;
 
-    cursor: pointer;
+    cursor: pointer !important;
 }
 
 .doc-resource-icon {
     height: 32px;
     transform: translateX(10px);
     transition: ease-in-out .15s;
+    cursor: pointer !important;
 }
 
 .doc-arrow-icon {
@@ -116,6 +107,7 @@ body {
     margin-bottom: 20px;
     opacity: 0;
     transition: ease-in-out .15s;
+    cursor: pointer !important;
 }
 
 .doc-top:hover > .doc-arrow-icon {
@@ -143,7 +135,7 @@ body {
     object-fit: cover;    
     background-color: #0A0A0Ad2;
     opacity: 0;
-    cursor: pointer;
+    cursor: pointer !important;
     -webkit-animation: fadeinbgimg 4s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadeinbgimg 4s; /* Firefox < 16 */
     -ms-animation: fadeinbgimg 4s; /* Internet Explorer */
@@ -161,6 +153,7 @@ body {
     background-position: center;
     position: absolute;
     transition: ease-in-out .25s;
+    cursor: pointer !important;
 }
 
 #example-project-bg:hover {
@@ -189,7 +182,7 @@ body {
     height:100%;
     top:0;
     left: 0;
-    cursor: pointer;
+    cursor: pointer !important;
     z-index: 4;
 }
 
@@ -296,17 +289,15 @@ body {
     display: flex;
     
     z-index: 30;
-    
 }
 
 .mouse a {
     position: absolute;
-    bottom: 20px;
-    left: 50%;
+    bottom: 0px;
+    left: 00%;
     z-index: 40;
     display: inline-block;
     -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
     color: #fff;
     font : normal 400 20px/1 'Josefin Sans', sans-serif;
     letter-spacing: .1em;
@@ -318,10 +309,10 @@ body {
     border-radius:30px;
     opacity: 33%;
     
-    display: flex;
-    
     z-index: 30;
+    cursor: pointer !important;
 }
+
 .demo a:hover {
     opacity: .5;
 }
@@ -436,4 +427,10 @@ body {
 
 .card .card-img-top {
     z-index: 99999;
+}
+
+@media only screen and (max-height: 500px) {
+    #content {
+        margin-top: 75px;
+    }
 }

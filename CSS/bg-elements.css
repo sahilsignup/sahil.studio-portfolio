@@ -111,3 +111,45 @@
     }
     
 }
+
+@media only screen and (min-height: 100px) {
+    .marquee .text, .marquee-02 .text {
+        font-size: 20vw;
+    }
+}
+
+@media only screen and (min-height: 800px) {
+    .marquee .text, .marquee-02 .text {
+        font-size: 17vw;
+    }
+}
+
+@media only screen and (max-height: 500px) {
+    .marquee .text, .marquee-02 .text {
+        font-size: 13vw;
+    }
+}
+
+@media only screen and (max-height: 450px) {
+    .marquee .text, .marquee-02 .text {
+        font-size: 11vw;
+    }
+}
+
+@media only screen and (max-height: 375px) {
+    .marquee .text, .marquee-02 .text {
+        font-size: 9vw;
+    }
+}
+
+@media only screen and (max-height: 300px) {
+    .marquee .text, .marquee-02 .text {
+        font-size: 7vw;
+    }
+}
+
+@media only screen and (max-height: 215px) {
+    .marquee .text, .marquee-02 .text {
+        font-size: 5vw;
+    }
+}

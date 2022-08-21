@@ -12,7 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
     <!-- Site Properties -->
     <title> Resources | Sahil Studio </title>
@@ -23,16 +22,15 @@
     <div class="cursor2"></div> 
     
     <!-- Style Sheets -->
-        <!-- Style Sheets -->
-        <link rel="stylesheet" href="/CSS/resources.css">
-        <link rel="stylesheet" href="/CSS/navbar.css">
-        <link rel="stylesheet" href="/CSS/keyframes.css">
-        <link rel="stylesheet" href="/CSS/cursor.css">
-        <link rel="stylesheet" href="/CSS/tooltips.css">
-        <link rel="stylesheet" href="/CSS/bg-elements.css">
-        <link rel="stylesheet" href="/CSS/styling-main.css">
-        <script type="text/javascript" src="JS/resources.js"></script>
-        <script type="text/javascript" src="JS/navbar.js"></script>
+    <link rel="stylesheet" href="/CSS/resources.css">
+    <link rel="stylesheet" href="/CSS/navbar.css">
+    <link rel="stylesheet" href="/CSS/keyframes.css">
+    <link rel="stylesheet" href="/CSS/cursor.css">
+    <link rel="stylesheet" href="/CSS/tooltips.css">
+    <link rel="stylesheet" href="/CSS/bg-elements.css">
+    <link rel="stylesheet" href="/CSS/styling-main.css">
+    <script type="text/javascript" src="JS/navbar.js"></script>
+
     
     <!-- Meta -->
     <meta charaset="UTF-8">   
@@ -174,12 +172,13 @@
                     <li data-filter=".filter-lists, .filter-design-editing, .filter-language" class="filter-active">All</li>
                     <li data-filter=".filter-lists">Lists</li>
                     <li data-filter=".filter-language">Language</li>
-                    <li data-filter=".filter-design-editing">Design & Video Editing</li>
+                    <li id="last-list-item" data-filter=".filter-design-editing">Design & Video Editing</li>
+                    &nbsp;
                 </ul>
-            </div>
+        </div>
+        
             
-            <div class="doc-list">
-
+            <div class="doc-list" id="portfolio-wrapper">
                 <div class="doc portfolio-item filter-design-editing">
                     <div class="doc-info">
                         <div class="doc-bg-img" id="music-resources-bg"></div>
@@ -238,31 +237,37 @@
                 <!-- Footer -->
                 <div class="docs-whitespace">
                 </div>
-                
-                <nav class="navbar">
-                    <li id="nav-home">
-                        <a class="tooltip-bottom" data-tooltip="Home" href="/index.html">
-                            <img class="navbar-icon" src="/ASSETS/icon-sahil.png">
-                        </a>
-                    </li>
-                    <li id="nav-resources">
-                        <a class="tooltip-bottom" data-tooltip="Resources" href="/resources.html">
-                            <img class="navbar-icon" src="/ASSETS/emoji-navbar-resources.png">
-                        </a>
-                    </li>
-                    <li id="nav-work">
-                        <a class="tooltip-bottom" data-tooltip="Portfolio" href="/my-work.html">
-                            <img class="navbar-icon" src="/ASSETS/emoji-navbar-work-showcase.png">
-                        </a>
-                    </li>
-                    <li id="nav-work">
-                        <a class="tooltip-bottom" data-tooltip="Contact" href="/contact.html">
-                            <img class="navbar-icon" src="/ASSETS/emoji-navbar-contact.png">
-                        </a>
-                    </li>
-                </nav>
             </div>
         </div>
     </div>
+
+    <ul class="navbar">
+        <li id="nav-home">
+            <a class="tooltip-bottom" data-tooltip="Home" href="/index.html">
+                <img class="navbar-icon" src="/ASSETS/icon-sahil.png">
+                <h1 class="navbar-heading">Home</h1>
+            </a>
+        </li>
+        <li id="nav-resources">
+            <a class="tooltip-bottom" data-tooltip="Resources" href="/resources.html">
+                <img class="navbar-icon" id="nav-resources-icon" src="/ASSETS/emoji-navbar-resources.png">
+                <h1 class="navbar-heading">Resources</h1>
+            </a>
+        </li>
+        <li id="nav-work">
+            <a class="tooltip-bottom" data-tooltip="Portfolio" href="/my-work.html">
+                <img class="navbar-icon" src="/ASSETS/emoji-navbar-work-showcase.png">
+                <h1 class="navbar-heading">Portfolio</h1>
+            </a>
+        </li>
+        <li id="nav-work">
+            <a class="tooltip-bottom" data-tooltip="Contact" href="/contact.html">
+                <img class="navbar-icon" src="/ASSETS/emoji-navbar-contact.png">
+                <h1 class="navbar-heading">Contact</h1>
+            </a>
+        </li>
+    </ul>
+
+    <script type="text/javascript" src="JS/resources.js"></script>
 </body>
 </html>

@@ -10,6 +10,20 @@
     right: 0;
 }
 
+body {
+    background-image: url("/ASSETS/site-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+    overflow-x: hidden;
+    /* margin: 0;
+    padding: 0; */
+    /* margin: 0 auto;
+    /* filter: drop-shadow(4px 4px 1px #0A0A0A); */
+    /* overflow: hidden; */
+}
+
 ::selection {
     background: #0A0A0A;
 }
@@ -22,6 +36,7 @@
 
 *::-webkit-scrollbar {
     width: 8px;
+    height: 8px;
     background-color: #1D1923;
 }
 
@@ -30,6 +45,7 @@
 }
 
 *::-webkit-scrollbar-thumb {
+    height: 56px;
     height: 56px;
     border-radius: 8px;
     background-clip: border-box;

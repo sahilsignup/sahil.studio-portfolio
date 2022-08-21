@@ -1,23 +1,5 @@
 /* Page */
 
-body {
-    background-image: url("/ASSETS/site-bg.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: right;
-    overflow-x: hidden;
-    /* margin: 0;
-    padding: 0; */
-    /* margin: 0 auto;
-    /* filter: drop-shadow(4px 4px 1px #0A0A0A); */
-    /* overflow: hidden; */
-}
-
-html, body {
-    overflow-x:hidden 
-  } 
-
 /* Page Content */
 
 #content {
@@ -79,8 +61,7 @@ input {
 textarea {
     max-width: 40vw;
     min-width: 40vw;
-    max-height: 400px;
-    height: 170px;
+    max-height: 170px;
     padding: 12px 20px;
     margin: 16px;
     box-sizing: border-box;
