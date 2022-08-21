@@ -16,21 +16,23 @@ window.addEventListener('pageshow', function(event) {
   fader.removeAttribute('class', 'fade-in');
   fader.setAttribute('class', 'fade-out');
   });
-  
 
   const elts = {
     text1: document.getElementsByClassName("navbar"),
-    text2: document.getElementsByClassName("navbar-icon")
+    text2: document.getElementsByClassName("navbar-icon"),
+    text3: document.getElementsByClassName("navbar-heading")
 };
 
 $(window).on('scroll', function() {
     var scrollTop = $(window).scrollTop();
     // if (scrollTop >= 40 && scrollTop <= 20) {
     if (scrollTop >= 40) {
-        $('.navbar-icon').stop(scrollTop).animate({scale: "80%", margin: "0px"}, 0);
+        $('.navbar-icon').stop(scrollTop).animate({scale: "80%"}, 0).css({"margin-top": "0px"});
+        $('.navbar-heading').stop(scrollTop).animate({opacity: "0%"}, 200).css({"pointer-events": "none"}, 200);
         $('.navbar').stop().animate({height: "80px"}, 0);
     } else {
-        $('.navbar-icon').stop(scrollTop).animate({scale: "100%", margin: "15px"}, 0);
+        $('.navbar-icon').stop(scrollTop).animate({scale: "100%"}, 0).css({"margin-top": "15px"});
+        $('.navbar-heading').stop(scrollTop).animate({opacity: "100%"}, 200).css({"pointer-events": "all"}, 200);
         $('.navbar').stop().animate({height: "80px"}, 0);
     }
 });

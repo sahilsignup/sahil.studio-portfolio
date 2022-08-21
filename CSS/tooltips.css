@@ -14,6 +14,7 @@
 .tooltip:after {
   position: absolute;
   visibility: hidden;
+  display: block;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
@@ -53,7 +54,7 @@
 /* Base styles for the tooltip's content area */
 .tooltip:after,
 [data-tooltip]:after {
-    font-family: Poppins;
+  font-family: Poppins;
   z-index: 1000;
   padding: 8px;
   width: 110px;
@@ -108,4 +109,13 @@
   -webkit-transform: translateY(12px);
   -moz-transform:    translateY(12px);
   transform:         translateY(12px); 
+}
+
+@media only screen and (max-width: 800px) {
+  .tooltip-bottom:hover:before,
+  .tooltip-bottom:hover:after,
+  .tooltip-bottom:focus:before,
+  .tooltip-bottom:focus:after {
+    opacity: 0%;
+  }
 }

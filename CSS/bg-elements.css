@@ -12,7 +12,8 @@
     background-image: url("/ASSETS/tv-noise-01.gif");
     height: 100%;
     width: 100%;
-    opacity: 08%;
+    mix-blend-mode: overlay;
+    opacity: 0.33;
     object-fit: scale-down;
     background-size: auto;
     background-repeat: repeat;
@@ -101,4 +102,12 @@
     text-transform: uppercase;
     color: #0A0A0A;
     text-shadow: -1px -1px 0 #F1F1F1, 1px -1px 0 #F1F1F1, -1px 1px 0 #F1F1F1, 1px 1px 0 #F1F1F1;
+}
+
+@media only screen and (max-width: 1200px) {
+    #bg-noise {
+        mix-blend-mode: normal;
+        opacity: 4%;
+    }
+    
 }

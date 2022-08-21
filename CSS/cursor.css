@@ -41,3 +41,20 @@
 
     pointer-events: none;
 }
+
+@media only screen and (max-width: 800px) {
+    *, *::before, *::after {
+        box-sizing: border-box;
+        cursor: auto !important;
+    }
+        
+        .cursor {
+        transform: scale(0%);
+        display: none;
+    }
+
+    .cursor2 {
+        transform: scale(0%);
+        display: none;
+    }
+}

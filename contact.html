@@ -44,7 +44,7 @@
     <meta name="author" content="Sahil Kassam">
     <meta name="keywords" content="Video Editing, Design, Philosophy, Video Editor, Portfolio, Video Editing Portfolio, Free Video Editing, Sahil Studio, Sahil Video Editing, Sahil Studio Video Editing">
     <meta name="description" content="Sahil Studio — the digital portfolio of Sahil K, showcasing public resources and tools, as well as his work.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 minimum-scale=1.0">
 </head>
 
 <body>
@@ -172,25 +172,27 @@
     </div>
     
     <div id="content">
-        <div id="contact-form">
-            <form id="test-form" action="https://api.web3forms.com/submit" method="POST">
+                <!-- Footer -->
+                <div class="docs-whitespace">
+                </div>
+                
+            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
                 <input type="hidden" name="access_key" value="4c038496-13a9-460d-9cd9-436bfc00fbc9">
                 
-                <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
                 <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+                <input type="text" class="form-control" id="subject" placeholder="SUBJECT" name="subject" value="" required>
                 <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
                 <input type="hidden" name="redirect" value="https://sahil.Studio">
                 <button type="submit">SUBMIT</button>
             </form>
-        </div>
         <div id="contact-other">
-            <div class="social-media" id="address">
+            <div class="social-media">
                 <img class="social-media-icon" src="/ASSETS/emoji-flag-canada.png">
-                <h1 class="social-media-text">Mississauga & Toronto, Ontario</h1>
+                <h1 class="social-media-text" id="location">Mississauga & Toronto, Ontario</h1>
             </div>
             <a class="social-media email" href="mailto:hi@sahil.studio" target="_blank">
-                    <img class="social-media-icon" src="/ASSETS/icon-social-email.png">
-                    <h1 class="social-media-text">hi@sahil.studio</h1>
+                    <img class="social-media-icon" id="email-icon" src="/ASSETS/icon-social-email.png">
+                    <h1 class="social-media-text" id="email-text">hi@sahil.studio</h1>
             </a>
             <div class="social-media">
                 <img class="social-media-icon" id="discord-icon" src="/ASSETS/icon-social-discord.svg">
@@ -213,10 +215,6 @@
                 <img class="img-fluid qr-code" src="/ASSETS/icon-qr-code.svg">
             </a>
         </div>
-
-        <!-- Footer -->
-        <div class="docs-whitespace">
-        </div>
     </div>
     
 </div>
@@ -225,21 +223,25 @@
     <li id="nav-home">
         <a class="tooltip-bottom" data-tooltip="Home" href="/index.html">
             <img class="navbar-icon" src="/ASSETS/icon-sahil.png">
+            <h1 class="navbar-heading">Home</h1>
         </a>
     </li>
     <li id="nav-resources">
         <a class="tooltip-bottom" data-tooltip="Resources" href="/resources.html">
-            <img class="navbar-icon" src="/ASSETS/emoji-navbar-resources.png">
+            <img class="navbar-icon" id="nav-resources-icon" src="/ASSETS/emoji-navbar-resources.png">
+            <h1 class="navbar-heading">Resources</h1>
         </a>
     </li>
     <li id="nav-work">
         <a class="tooltip-bottom" data-tooltip="Portfolio" href="/my-work.html">
             <img class="navbar-icon" src="/ASSETS/emoji-navbar-work-showcase.png">
+            <h1 class="navbar-heading">Portfolio</h1>
         </a>
     </li>
     <li id="nav-work">
         <a class="tooltip-bottom" data-tooltip="Contact" href="/contact.html">
             <img class="navbar-icon" src="/ASSETS/emoji-navbar-contact.png">
+            <h1 class="navbar-heading">Contact</h1>
         </a>
     </li>
 </ul>
