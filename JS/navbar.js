@@ -27,7 +27,7 @@ $(window).on('scroll', function() {
     var scrollTop = $(window).scrollTop();
     // if (scrollTop >= 40 && scrollTop <= 20) {
     if (scrollTop >= 40) {
-        $('.navbar-icon').stop(scrollTop).animate({scale: "80%"}, 0).css({"margin-top": "0px"});
+        $('.navbar-icon').stop(scrollTop).animate({scale: "80%"}, 0).css({"margin-top": "15px"});
         $('.navbar-heading').stop(scrollTop).animate({opacity: "0%"}, 200).css({"pointer-events": "none"}, 200);
         $('.navbar').stop().animate({height: "80px"}, 0);
     } else {

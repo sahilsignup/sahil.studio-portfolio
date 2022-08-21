@@ -60,7 +60,7 @@
     text-indent: 0;
     animation: marquee 15s linear infinite;
     font-weight: 500;
-    font-size: 15vw;
+    font-size: 20vh;
     line-height: 125%;
     letter-spacing: -0.04em;
     text-transform: uppercase;
@@ -96,7 +96,7 @@
     text-indent: 0;
     animation: marquee 20s linear infinite;
     font-weight: 500;
-    font-size: 15vw;
+    font-size: 20vh;
     line-height: 125%;
     letter-spacing: -0.04em;
     text-transform: uppercase;
@@ -112,44 +112,44 @@
     
 }
 
-@media only screen and (min-height: 100px) {
+@media only screen and (min-height: 1000px) {
     .marquee .text, .marquee-02 .text {
-        font-size: 20vw;
+        font-size: 32vh;
     }
 }
 
 @media only screen and (min-height: 800px) {
     .marquee .text, .marquee-02 .text {
-        font-size: 17vw;
+        font-size: 20vh;
     }
 }
 
 @media only screen and (max-height: 500px) {
     .marquee .text, .marquee-02 .text {
-        font-size: 13vw;
-    }
-}
-
-@media only screen and (max-height: 450px) {
-    .marquee .text, .marquee-02 .text {
-        font-size: 11vw;
-    }
-}
-
-@media only screen and (max-height: 375px) {
-    .marquee .text, .marquee-02 .text {
-        font-size: 9vw;
+        font-size: 17vh;
     }
 }
 
 @media only screen and (max-height: 300px) {
     .marquee .text, .marquee-02 .text {
-        font-size: 7vw;
+        font-size: 10vh;
     }
 }
 
 @media only screen and (max-height: 215px) {
     .marquee .text, .marquee-02 .text {
-        font-size: 5vw;
+        font-size: 7vh;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .marquee, .marquee-02 {
+        height: 30vh;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .marquee, .marquee-02 {
+        height: 40vh;
     }
 }
