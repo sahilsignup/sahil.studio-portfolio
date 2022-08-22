@@ -4,14 +4,14 @@
 
 #content {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
     
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    
     z-index: 2;
 }
 
@@ -30,15 +30,15 @@
     font-weight: 500;
     color: #EC8609;
     min-height: 100vh;
-    filter:blur(0px);
+    filter:blur(2px);
     text-transform: uppercase;
     filter: drop-shadow(0px 0px 33px #EC8609);
     filter: drop-shadow(0px 0px 33px #F9AC4E);
 
-    -webkit-animation: fadein4 6s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein4 6s; /* Firefox < 16 */
-    -ms-animation: fadein4 6s; /* Internet Explorer */
-    -o-animation: fadein4 6s; /* Opera < 12.1 */
+    -webkit-animation: fadein4 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein4 2s; /* Firefox < 16 */
+    -ms-animation: fadein4 2s; /* Internet Explorer */
+    -o-animation: fadein4 2s; /* Opera < 12.1 */
     animation: fadein4 2s;
     user-select: none;
 
@@ -59,6 +59,22 @@
 .hello-icon {
     max-width: 84px;
     max-height: 84px;
+}
+
+#icon-main {
+    position: absolute;
+    max-width: 128px;
+    max-height: 128px;
+    justify-content: center;
+}
+
+#icon-main-wrapper {
+    margin: 0 auto;
+    position: absolute;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #earth-icon {
@@ -96,6 +112,7 @@
 #welcome-to-text {
     position: absolute;
     padding-top: 120px;
+    padding-left: 180px;
     animation: hello-fade 16s infinite ease-in-out;
     word-break: keep-all;
 
@@ -103,9 +120,9 @@
     justify-content: center;
     align-items: center;
 
-    font-family: 'Cinzel', serif;
-    font-size: 32px;
-    text-transform: uppercase;
+    font-family: 'Jost', serif;
+    font-size: 88px;
+    text-transform: lowercase;
     color: #F79926;
     filter: drop-shadow(0px 0px 33px #F79926);
 
@@ -114,4 +131,10 @@
     -ms-animation: fadein2 4s; /* Internet Explorer */
     -o-animation: fadein2 4s; /* Opera < 12.1 */
     animation: fadein2 4s;
+}
+
+@media screen and (min-width: 600px) {
+    .morphing {
+        font-size: 64px;
+    }
 }
