@@ -9,6 +9,6 @@ $("#portfolio-flters li").click ( function() {
   
   setTimeout(function() {
     $(selectedFilter).fadeIn(100).css('transform', 'scale(1)');
-    $("#portfolio-wrapper").fadeTo(300, 1);
-  }, 300);
+    $("#portfolio-wrapper").fadeTo(400, 1);
+  }, 400);
 });

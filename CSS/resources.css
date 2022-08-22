@@ -65,6 +65,8 @@
 }
 
 .doc-bg-img {
+    width: 275px;
+    height: 300px;
     position: absolute;
     z-index: 1;
     opacity: .11;
@@ -77,8 +79,6 @@
 }
 
 #music-resources-bg {
-    width: 275px;
-    height: 300px;
     filter: brightness(400%) blur(1.5px);
     background: url(https://images.unsplash.com/photo-1585298723682-7115561c51b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80.png);
     background-size: cover;
@@ -89,8 +89,6 @@
 }
 
 #useful-applications-bg {
-    width: 275px;
-    height: 300px;
     filter: brightness(75%) blur(2.5px);
     background: url(https://images.unsplash.com/flagged/photo-1569144654912-5f146d08b98b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80.png);
     background-size: cover;
@@ -101,8 +99,6 @@
 }
 
 #useful-websites-bg {
-    width: 275px;
-    height: 300px;
     filter: brightness(50%) blur(2.5px);
     background: url(https://images.unsplash.com/photo-1590965918603-0dce981d13b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80.png);
     background-size: cover;
@@ -113,8 +109,6 @@
 }
 
 #browser-games-bg {
-    width: 275px;
-    height: 300px;
     filter: brightness(50%) blur(1px);
     transform: rotate(-45deg);
     background: url(https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80.png);
@@ -297,10 +291,6 @@
         padding-right: 20px;
     }
 
-    /* .tags-selector {
-    border-radius: 5px;
-    } */
-
     #portfolio #portfolio-flters li {
         width: auto;
         max-height: 40px;
@@ -327,9 +317,43 @@
         min-width: 400px;
         max-width: 400px;
     }
+    
+    .doc-bg-img {
+        transform: scale(150%);
+        margin-left: 70px;
+    }
 
     .doc-list {
         margin-left: 6px;
+    }
+
+    .tags-selector {
+        margin: 15px 05px 15px 05px;
+        border-radius: 5px;
+    }
+
+    #browser-games-bg {
+        transform: scale(170%);
+    }
+
+    .info-title {
+        padding: 5px 0px 5px 0px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .doc {
+        min-width: 90vw;
+        max-width: 90vw;
+    }
+
+    .doc-bg-img {
+        transform: scale(120%);
+        margin-left: 60px;
+    }
+
+    #browser-games-bg {
+        transform: scale(110%);
     }
 
     .tags-selector {
@@ -341,6 +365,75 @@
     .doc {
         min-width: 90vw;
         max-width: 90vw;
+    }
+
+    .doc-bg-img {
+        transform: scale(130%);
+        margin-left: 80px;
+    }
+
+    #browser-games-bg {
+        transform: scale(110%);
+    }
+
+    .tags-selector {
+        margin: 15px 05px 15px 05px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .doc {
+        min-width: 90vw;
+        max-width: 90vw;
+    }
+
+    .doc-bg-img {
+        transform: scale(120%);
+        margin-left: 60px;
+    }
+
+    #browser-games-bg {
+        transform: scale(110%);
+    }
+
+    .tags-selector {
+        margin: 15px 05px 15px 05px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .doc {
+        min-width: 90vw;
+        max-width: 90vw;
+    }
+
+    .doc-bg-img {
+        transform: scale(120%);
+        margin-left: 10%;
+    }
+
+    #browser-games-bg {
+        transform: scale(110%);
+    }
+
+    .tags-selector {
+        margin: 15px 05px 15px 05px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .doc {
+        min-width: 90vw;
+        max-width: 90vw;
+    }
+
+    .doc-bg-img {
+        transform: scale(120%);
+        margin-left: 05%;
+    }
+
+    #browser-games-bg {
+        transform: scale(110%);
     }
 
     .tags-selector {
