@@ -27,6 +27,4 @@ RewriteRule ^([^.]+)/$ $1.html [L]
 
 RewriteCond %{REQUEST_URI} !sitemap [NC]
 
-ErrorDocument 404 /404.html
-
 </IfModule>
