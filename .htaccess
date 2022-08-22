@@ -1,6 +1,3 @@
-<IfModule mod_rewrite.c> 
-Options +FollowSymLinks -MultiViews
-
 RewriteEngine On 
 RewriteBase /
 
@@ -27,4 +24,4 @@ RewriteRule ^([^.]+)/$ $1.html [L]
 
 RewriteCond %{REQUEST_URI} !sitemap [NC]
 
-</IfModule>
+ErrorDocument 404 /404.html
