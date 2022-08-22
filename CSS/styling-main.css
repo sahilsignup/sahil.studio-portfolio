@@ -10,13 +10,16 @@
     right: 0;
 }
 
-body {
+body, .bg {
     background-image: url("/ASSETS/site-bg.png");
     background-size: cover;
     background-repeat: repeat-y;
     background-attachment: fixed;
     background-position: right;
     overflow-x: hidden;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
     /* margin: 0;
     padding: 0; */
     /* margin: 0 auto;
