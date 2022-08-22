@@ -21,7 +21,7 @@ body {
 
 /* Docs Whitespace (Below) */
 .docs-whitespace {
-    width: 100vw;
+    width: 95vw;
     margin: 50px 50px 50px 50px;
     padding: 15px 15px 15px 15px;
     transition: ease-in-out .25s;
@@ -34,19 +34,32 @@ body {
 
 /* Documents */
 .doc-list {
-    width: 100vw;
-    height: 100vh;
+    position: relative;
+    min-width: 100vw;
+    min-height: 100vh;
     display: flex;
-    justify-content: center;
-    align-content: flex-start;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
     padding-top: 16px;
 }
 
 .doc-wrapper {
+    position: relative;
+    min-width: 26%;
+    min-height: 30%;
     z-index: 2;
     transition: ease-in-out .25s;
     filter: drop-shadow(0px 0px 9px #EC8609);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin-right: -40px; ONLY enabled when width: 95vw */
+    padding: 0;
+    margin: 20px 8px 20px 8px;
+
 }
 
 .doc {
@@ -60,8 +73,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     transition: ease-in-out .25s;
-    margin: 30px;
-    margin-top: 0px;
+    margin: 0px 30px 0px 30px;
     
     -webkit-animation: fadeinnav 4s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadeinnav 4s; /* Firefox < 16 */
@@ -76,7 +88,7 @@ body {
     width: 128px;
     height: 48px;
     clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
-    margin-left: 64px;
+    margin-right: 310px;
     
     transition: ease-in-out .25s;
     
@@ -146,8 +158,8 @@ body {
 }
 
 #example-project-bg {
-    max-width: 544px;
-    max-height: 306px;
+    width: 544px;
+    height: 306px;
     background: url(https://picsum.photos/id/237/1920/1080);
     background-size: cover;
     background-position: center;
@@ -436,33 +448,102 @@ body {
 
 @media only screen and (max-width: 615px) {
     .doc, .doc-top {
-        transform: scale(80%);
+        transform: scale(90%);
         margin: 0;
     }
 
     .doc-top {
-        margin-left: 64px;
-        margin-bottom: -36px;
+        margin-right: 248px;
+        margin-bottom: -16px;
+    }
+
+    .doc-wrapper {
+        height: 40%;
+        margin-bottom: 80px;
     }
 }
 
 @media only screen and (max-width: 500px) {
+    .doc, .doc-top {
+        transform: scale(75%);
+        margin: 0;
+    }
+
+    .doc-top {
+        margin-right: 200px;
+        margin-bottom: -22px;
+    }
+
+    .doc {
+        margin-top: -22px;
+    }
+
+    .doc-wrapper {
+        height: 40%;
+        
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .doc, .doc-top {
+        transform: scale(70%);
+        margin: 0;
+    }
+
+    .doc-top {
+        margin-right: 240px;
+        margin-bottom: -22px;
+    }
+
+    .doc {
+        margin-top: -30px;
+    }
+
+    .doc-wrapper {
+        height: 40%;
+        max-height: 280px;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 375px) {
     .doc, .doc-top {
         transform: scale(60%);
         margin: 0;
     }
 
     .doc-top {
-        margin-left: 100px;
-        margin-bottom: -72px;
+        margin-right: 170px;
+        margin-bottom: -42px;
+    }
+
+    .doc {
+        margin-top: -30px;
+    }
+
+    .doc-wrapper {
+        height: 40%;
+        max-height: 280px;
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 350px) {
     .doc, .doc-top {
-        transform: scale(20%);
+        transform: scale(50%);
         margin: 0;
     }
 
+    .doc-top {
+        margin-right: 170px;
+        margin-bottom: -32px;
+    }
 
+    .doc {
+        margin-top: -58px;
+    }
+
+    .doc-wrapper {
+        height: 40%;
+        max-height: 280px;
+    }
 }
