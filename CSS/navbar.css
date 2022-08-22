@@ -64,9 +64,6 @@
         transform: scale(150%);
     }
 
-    #nav-resources-icon {
-        margin-left: 6px;
-    }
 }
 
 @media only screen and (max-width: 600px) {

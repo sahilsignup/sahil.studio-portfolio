@@ -181,8 +181,9 @@ button:active {
     pointer-events: none;
 }
 
-#location {
-    white-space: nowrap;
+#location:before {
+    white-space: pre;
+    content: 'Mississauga & Toronto, Ontario'
 }
 
 .copy-text {
@@ -202,7 +203,7 @@ button:active {
 }
 
 .fancybox {
-    position: absolute;
+    position: fixed;
     z-index: 40;
     cursor: pointer !important;
 
@@ -264,8 +265,9 @@ button:active {
 }
 
 @media only screen and (max-width: 475px) {
-    #location {
-        white-space: pre-wrap;
+    #location:before {
+        white-space: pre;
+        content: 'Mississauga & Toronto,\aOntario'
     }
 }
 
