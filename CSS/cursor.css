@@ -42,19 +42,19 @@
     pointer-events: none;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
     *, *::before, *::after {
         box-sizing: border-box;
         cursor: auto !important;
     }
         
         .cursor {
-        transform: scale(0%);
-        display: none;
+        transform: scale(0%) !important;
+        display: none !important;
     }
 
     .cursor2 {
-        transform: scale(0%);
-        display: none;
+        transform: scale(0%) !important;
+        display: none !important;
     }
 }

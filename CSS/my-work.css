@@ -243,14 +243,14 @@ body {
     justify-content: center;
     align-items: center;
     height: 50vh;
-    width: 70vw;
+    width: 80%;
     position: relative;
 }
 
 #reel-thumbnail-video {
     min-width: 50%; 
     min-height: 50%;
-    filter: drop-shadow(0px 0px 33px #F79926);
+    filter: drop-shadow(0px 0px 33px #F79926) brightness(22%);
     cursor: pointer;
     
     -webkit-animation: fadein2 2s; /* Safari, Chrome and Opera > 12.1 */
@@ -268,6 +268,7 @@ body {
     font-size: 18vw;
     padding: 40px;
     filter: drop-shadow(0px 0px 11px #F79926);
+    mix-blend-mode: luminosity;
 
     display: flex;
     align-items: center;
@@ -482,6 +483,19 @@ body {
         height: 40%;
         
     }
+
+    #content {
+        overflow-x: hidden;
+    }
+
+    #reel {
+        width: 100%;
+    }
+
+    #reel-thumbnail-video {
+        min-width: 250%;
+    }
+
 }
 
 @media only screen and (max-width: 440px) {
