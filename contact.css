@@ -1,0 +1,382 @@
+/* Page */
+
+/* Page Content */
+
+#content {
+    position: absolute;
+    width: 100vw;
+    height: 95vh;
+    
+    display: flex;
+    flex-direction: row;
+    
+    z-index: 2;
+}
+
+/* Docs Whitespace (Below)
+.docs-whitespace {
+    width: 100vw;
+    margin: 50px 50px 50px 50px;
+    padding: 105px 15px 15px 105px;
+    transition: ease-in-out .25s;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    line-height: 1;
+} */
+
+input::selection {
+    background: #EC8609;
+}
+
+input::-moz-selection {
+    background: #EC8609;
+}
+
+
+input {
+    width: 40vw;
+    padding: 12px 20px;
+    margin: 16px;
+    box-sizing: border-box;
+    
+    background: linear-gradient(45deg, #0A0A0A, #221E22);
+    box-shadow: 10px 10px 0px #221E22,
+    20px 20px 0px #221E224b;
+    filter: drop-shadow(0px 0px 9px #EC8609);
+    border: 2px solid #0A0A0A;
+    font-family: 'Alata', serif;
+    font-size: 16px;
+    color: #F1F1F1;
+    transition: ease-in-out .25s;
+}
+
+::placeholder {
+    color: #F79926;
+    font-family: 'Cinzel', serif;
+    font-size: 16px;
+}
+
+textarea {
+    max-width: 40vw;
+    min-width: 40vw;
+    max-height: 170px;
+    padding: 12px 20px;
+    margin: 16px;
+    box-sizing: border-box;
+    
+    background: linear-gradient(45deg, #0A0A0A, #221E22);
+    box-shadow: 10px 10px 0px #221E22,
+    20px 20px 0px #221E224b;
+    filter: drop-shadow(0px 0px 9px #EC8609);
+    border: 2px solid #0A0A0A;
+    font-family: 'Alata', serif;
+    font-size: 16px;
+    color: #F1F1F1;
+    transition: linear .15s;
+}
+
+button {
+    width: 40vw;
+    padding: 12px 20px;
+    margin: 16px;
+    box-sizing: border-box;
+    
+    background: linear-gradient(45deg, #0A0A0A, #221E22);
+    box-shadow: 10px 10px 0px #221E22,
+    20px 20px 0px #221E224b;
+    filter: drop-shadow(0px 0px 9px #EC8609);
+    color: #F79926;
+    font-family: 'Cinzel', serif;
+    font-size: 16px;
+    border: 2px solid #0A0A0A;
+    cursor: pointer !important;
+    
+    transition: ease-in-out .25s;
+}
+
+button:active {
+    filter: drop-shadow(0px 0px 33px #EC8609);
+    transition: ease-in-out .25s;
+}
+
+#contact-form {
+    height: 100%;
+    width: 50vw;
+    margin: 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    -webkit-animation: fade-in-cursor 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fade-in-cursor 2s; /* Firefox < 16 */
+    -ms-animation: fade-in-cursor 2s; /* Internet Explorer */
+    -o-animation: fade-in-cursor 2s; /* Opera < 12.1 */
+    animation: fade-in-cursor 2s;
+
+    /* background-color: blue; */
+}
+
+#contact-other {
+    height: 100%;
+    width: 50vw;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    -webkit-animation: fade-in-cursor 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fade-in-cursor 2s; /* Firefox < 16 */
+    -ms-animation: fade-in-cursor 2s; /* Internet Explorer */
+    -o-animation: fade-in-cursor 2s; /* Opera < 12.1 */
+    animation: fade-in-cursor 2s;
+
+    /* background-color: green; */
+}
+
+
+.social-media {
+    padding: 0px 60px 0px 60px;
+    margin: 16px;
+    width: 40vw;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    background: linear-gradient(45deg, #0A0A0A, #221E22);
+    box-shadow: 10px 10px 0px #221E22,
+    20px 20px 0px #221E224b;
+    filter: drop-shadow(0px 0px 9px #EC8609);
+    
+    transition: ease-in-out .25s;
+}
+
+.social-media-icon {
+    width: 48px;
+    margin: 0px 8px 0px 8px;
+}
+
+.social-media-text {
+    color: #F79926;
+    font-family: Poppins;
+    font-size: 20px;
+}
+
+#discord-icon {
+    width: 40px;
+}
+
+#email-text {
+    pointer-events: none;
+}
+
+#email-icon {
+    pointer-events: none;
+}
+
+#location:before {
+    white-space: pre;
+    content: 'Mississauga & Toronto, Ontario'
+}
+
+.copy-text {
+    display: flex;
+    z-index: 8000000000000000;
+    margin-left: 8px;
+    
+    cursor: pointer !important;
+}
+
+.qr-code {
+    display: flex;
+    z-index: 8000000000000000;
+    margin-left: 8px;
+    
+    cursor: pointer !important;
+}
+
+.fancybox {
+    position: fixed;
+    z-index: 40;
+    cursor: pointer !important;
+
+    margin: 0 auto;
+}
+
+.cursor-pointer {
+    cursor: pointer !important;
+}
+
+.card .card-img-top {
+    z-index: 99999;
+}
+
+/* Media Queries  */
+
+@media only screen and (max-width: 950px) {
+    #content {
+        margin-top: 30vh;
+        flex-direction: column-reverse;
+    }
+
+    #contact-form {
+        width: 100vw;
+    }
+
+    #contact-other {
+        width: 100vw;
+    }
+
+    #contact-form {
+        margin-top: 80px;
+    }
+
+    input, button {
+        width: 80vw;
+    }
+
+    textarea {
+        max-width: 80vw;
+        min-width: 80vw;
+    }
+
+    .social-media {
+        width: 80vw;
+    }
+
+    .docs-whitespace {
+        width: 100vw;
+        margin: 50px 50px 50px 50px;
+        padding: 15px 15px 15px 15px;
+        transition: ease-in-out .25s;
+        font-size: 20px;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 800;
+        line-height: 1;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    #location:before {
+        white-space: pre;
+        content: 'Mississauga & Toronto,\aOntario'
+    }
+}
+
+@media only screen and (max-height: 935px) {
+    #content {
+        margin-top: 350px;
+    }
+}
+
+@media only screen and (max-height: 875px) {
+    #content {
+        margin-top: 400px;
+    }
+}
+
+@media only screen and (max-height: 810px) {
+    #content {
+        margin-top: 450px;
+    }
+}
+
+@media only screen and (max-height: 765px) {
+    #content {
+        margin-top: 500px;
+    }
+}
+
+@media only screen and (max-height: 710px) {
+    #content {
+        margin-top: 550px;
+    }
+}
+
+@media only screen and (max-height: 665px) {
+    #content {
+        margin-top: 600px;
+    }
+}
+
+@media only screen and (max-height: 610px) {
+    #content {
+        margin-top: 650px;
+    }
+}
+
+@media only screen and (max-height: 565px) {
+    #content {
+        margin-top: 700px;
+    }
+}
+
+@media only screen and (max-height: 510px) {
+    #content {
+        margin-top: 750px;
+    }
+}
+
+@media only screen and (max-height: 465px) {
+    #content {
+        margin-top: 800px;
+    }
+}
+
+@media only screen and (min-width: 950px) {
+    #content {
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-height: 500px) {
+    #content {
+        margin-top: 750px;
+        flex-direction: column-reverse;
+    }
+
+    #contact-form {
+        width: 100vw;
+    }
+
+    #contact-other {
+        width: 100vw;
+    }
+
+    #contact-form {
+        margin-top: 150px;
+    }
+
+    input, button {
+        width: 80vw;
+    }
+
+    textarea {
+        max-width: 80vw;
+        min-width: 80vw;
+    }
+
+    .social-media {
+        width: 80vw;
+    }
+
+    .docs-whitespace {
+        width: 100vw;
+        margin: 50px 50px 50px 50px;
+        padding: 15px 15px 15px 15px;
+        transition: ease-in-out .25s;
+        font-size: 20px;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 800;
+        line-height: 1;
+    }
+}
