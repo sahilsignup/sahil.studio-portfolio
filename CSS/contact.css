@@ -7,10 +7,15 @@
     width: 100vw;
     height: 95vh;
     
+    z-index: 2;
+}
+
+
+.socials {
     display: flex;
     flex-direction: row;
-    
-    z-index: 2;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Docs Whitespace (Below)
@@ -61,7 +66,7 @@ input {
 textarea {
     max-width: 40vw;
     min-width: 40vw;
-    max-height: 170px;
+    min-height: 170px;
     padding: 12px 20px;
     margin: 16px;
     box-sizing: border-box;
@@ -75,6 +80,7 @@ textarea {
     font-size: 16px;
     color: #F1F1F1;
     transition: linear .15s;
+    resize: vertical;
 }
 
 button {
@@ -188,7 +194,7 @@ button:active {
 
 .copy-text {
     display: flex;
-    z-index: 8000000000000000;
+    z-index: 50;
     margin-left: 8px;
     
     cursor: pointer !important;
@@ -196,18 +202,10 @@ button:active {
 
 .qr-code {
     display: flex;
-    z-index: 8000000000000000;
+    z-index: 50;
     margin-left: 8px;
     
     cursor: pointer !important;
-}
-
-.fancybox {
-    position: fixed;
-    z-index: 40;
-    cursor: pointer !important;
-
-    margin: 0 auto;
 }
 
 .cursor-pointer {
@@ -215,14 +213,25 @@ button:active {
 }
 
 .card .card-img-top {
-    z-index: 99999;
+    z-index: 95;
+}
+
+.docs-whitespace {
+    max-width: 50%;
+    height: 15vh;
+    margin: 0;
+    padding: 0;
+    transition: ease-in-out .25s;
 }
 
 /* Media Queries  */
 
 @media only screen and (max-width: 950px) {
-    #content {
-        margin-top: 30vh;
+    .docs-whitespace {
+        max-height: 20px;
+    }
+    
+    .socials {
         flex-direction: column-reverse;
     }
 
@@ -250,133 +259,11 @@ button:active {
     .social-media {
         width: 80vw;
     }
-
-    .docs-whitespace {
-        width: 100vw;
-        margin: 50px 50px 50px 50px;
-        padding: 15px 15px 15px 15px;
-        transition: ease-in-out .25s;
-        font-size: 20px;
-        text-align: center;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 800;
-        line-height: 1;
-    }
 }
 
 @media only screen and (max-width: 475px) {
     #location:before {
         white-space: pre;
         content: 'Mississauga & Toronto,\aOntario'
-    }
-}
-
-@media only screen and (max-height: 935px) {
-    #content {
-        margin-top: 350px;
-    }
-}
-
-@media only screen and (max-height: 875px) {
-    #content {
-        margin-top: 400px;
-    }
-}
-
-@media only screen and (max-height: 810px) {
-    #content {
-        margin-top: 450px;
-    }
-}
-
-@media only screen and (max-height: 765px) {
-    #content {
-        margin-top: 500px;
-    }
-}
-
-@media only screen and (max-height: 710px) {
-    #content {
-        margin-top: 550px;
-    }
-}
-
-@media only screen and (max-height: 665px) {
-    #content {
-        margin-top: 600px;
-    }
-}
-
-@media only screen and (max-height: 610px) {
-    #content {
-        margin-top: 650px;
-    }
-}
-
-@media only screen and (max-height: 565px) {
-    #content {
-        margin-top: 700px;
-    }
-}
-
-@media only screen and (max-height: 510px) {
-    #content {
-        margin-top: 750px;
-    }
-}
-
-@media only screen and (max-height: 465px) {
-    #content {
-        margin-top: 800px;
-    }
-}
-
-@media only screen and (min-width: 950px) {
-    #content {
-        margin-top: 40px;
-    }
-}
-
-@media only screen and (min-width: 800px) and (max-height: 500px) {
-    #content {
-        margin-top: 750px;
-        flex-direction: column-reverse;
-    }
-
-    #contact-form {
-        width: 100vw;
-    }
-
-    #contact-other {
-        width: 100vw;
-    }
-
-    #contact-form {
-        margin-top: 150px;
-    }
-
-    input, button {
-        width: 80vw;
-    }
-
-    textarea {
-        max-width: 80vw;
-        min-width: 80vw;
-    }
-
-    .social-media {
-        width: 80vw;
-    }
-
-    .docs-whitespace {
-        width: 100vw;
-        margin: 50px 50px 50px 50px;
-        padding: 15px 15px 15px 15px;
-        transition: ease-in-out .25s;
-        font-size: 20px;
-        text-align: center;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 800;
-        line-height: 1;
     }
 }

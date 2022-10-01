@@ -1,0 +1,108 @@
+
+
+.hyperlink {
+    color: #F9AC4E;
+}
+
+.tag-additional {
+    margin-top: 8px;
+}
+
+.tag-learning {
+    background-color: #91C483;
+    color: black;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+.tag-content-media {
+    background-color: #654062;
+    color: black;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+.tag-reading {
+    background-color: #FFE162;
+    color: black;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+.tag-practice {
+    background-color: #FF6464;
+    color: black;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+.tag-other {
+    background-color: #282F44;
+    color: white;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+.col-number {
+    max-width: 40px;
+    min-width: 40px;
+}
+
+.col-category {
+    
+}
+
+.col-name {
+    min-width: 300px;
+}
+
+.col-description {
+    min-width: 500px;
+}
+
+.col-preview-img {
+    
+}
+
+.card-btn {
+    display: inline-block;
+}
+
+.portfolio {
+    padding: 0 !important;
+}
+
+.container-bg {
+    padding-bottom: 20px !important;
+}
+
+.preview-imgs {
+    display: table-cell !important;
+    min-height: 100% !important;
+}
+
+.preview-img-icon {
+    object-fit: cover;
+    width: 48px;
+    height: 48px;
+    margin-left: 0 !important;
+    
+    border: 2px solid white !important;
+
+    cursor: pointer !important;
+}
+
+.disclaimer-wrapper {
+    width: 80%;
+    padding: 0px;
+    margin: 0 auto;
+}
+
+.disclaimer {
+    margin: 32px 0px 0px 0px !important;
+}
+
+.table-text {
+    font-size: 16px;
+    text-align: left;
+}

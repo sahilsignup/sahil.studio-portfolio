@@ -1,0 +1,59 @@
+.hyperlink {
+    color: #F9AC4E;
+}
+
+.disclaimer-wrapper {
+    width: 80%;
+    padding: 0px;
+    margin: 0 auto;
+}
+
+.pricing-text {
+    font-family: 'Josefin Sans', Courier, monospace;
+    text-align: left;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.license-text {
+    text-align: left;
+}
+
+.music-provider-logo {
+    cursor: pointer;
+    max-width: 150px;
+}
+
+.logo-outline {
+    filter: drop-shadow(0px 0px 1px #F1F1F1);
+}
+
+.music-providers-header {
+    transition: 0.5s ease-in-out;
+    text-align: center;
+}
+
+.text-header {
+    cursor: pointer !important;
+}
+
+.music-providers-header:hover {
+    filter: drop-shadow(0px 0px 33px #EC8609);
+}
+
+.table-category {
+    font-size: 24px;
+}
+
+.table-text {
+    font-size: 16px;
+    text-align: left;
+}
+
+.disclaimer {
+    margin: 40px 0px 0px 0px !important;
+}
+
+.table-overflow-wrapper {
+    max-height: fit-content !important;
+}

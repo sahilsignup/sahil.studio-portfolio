@@ -1,3 +1,10 @@
+* {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
 /* Page Content */
 #content {
     position: relative;
@@ -24,7 +31,7 @@
     -moz-animation: fadein3 4s; /* Firefox < 16 */
     -ms-animation: fadein3 4s; /* Internet Explorer */
     -o-animation: fadein3 4s; /* Opera < 12.1 */
-    animation: fadein3 4s;
+    animation: fadein3 3s;
     
 
     z-index: 13;
@@ -42,7 +49,7 @@
 .hello {
     height: 100%;
     width: 100%;
-    animation: hello-fade 16s infinite ease-in-out;
+    animation: hello-fade 12s infinite ease-in-out;
     word-break: keep-all;
     position: absolute;
     z-index: 20;
@@ -76,11 +83,11 @@
     color: #F79926;
     filter: drop-shadow(0px 0px 33px #F79926);
 
-    -webkit-animation: fadein2 4s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein2 4s; /* Firefox < 16 */
-    -ms-animation: fadein2 4s; /* Internet Explorer */
-    -o-animation: fadein2 4s; /* Opera < 12.1 */
-    animation: fadein2 4s;
+    -webkit-animation: fadein3 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein3 2s; /* Firefox < 16 */
+    -ms-animation: fadein3 2s; /* Internet Explorer */
+    -o-animation: fadein3 4s; /* Opera < 12.1 */
+    animation: fadein2 2s;
     z-index: 13;
 }
 
@@ -107,7 +114,7 @@
     height: 100%;
     width: 100%;
     margin-top: 100px;
-    z-index: 99;
+    z-index: 15;
 
     font-family: 'Jost', serif;
     font-size: 50px;
@@ -115,13 +122,13 @@
     color: #F79926;
     filter: drop-shadow(0px 0px 33px #F79926);
 
-    -webkit-animation: fadein2 6s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein2 6s; /* Firefox < 16 */
-    -ms-animation: fadein2 6s; /* Internet Explorer */
-    -o-animation: fadein2 6s; /* Opera < 12.1 */
-    animation: fadein2 6s;
+    -webkit-animation: fadein2 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein2 2s; /* Firefox < 16 */
+    -ms-animation: fadein2 2s; /* Internet Explorer */
+    -o-animation: fadein2 2s; /* Opera < 12.1 */
+    animation: fadein2 2s;
 
-    margin-top: 200px;
+    margin-top: 0px;
     position: relative;
     height: auto;
     width: 100%;
@@ -164,19 +171,19 @@
 
 
 .hello:nth-child(1) {
-    animation-delay: -16s;
-}
-
-.hello:nth-child(2) {
     animation-delay: -12s;
 }
 
+.hello:nth-child(2) {
+    animation-delay: -9s;
+}
+
 .hello:nth-child(3) {
-    animation-delay: -8s;
+    animation-delay: -6s;
 }
 
 .hello:nth-child(4) {
-    animation-delay: -4s;
+    animation-delay: -3s;
 }
 
 @keyframes hello-fade {
@@ -185,158 +192,9 @@
         opacity: 1;
    }
     20%, 80% {
-        filter: blur(.2em);
+        filter: blur(.1em);
         opacity: 0;
    }
-}
-
-.mouse {
-    overflow: hidden;
-    position: absolute;
-    left:50%;
-    top:90%;
-    width:24px;
-    margin: -12px;
-    height:50px;
-    border:2px solid white;
-    border-radius:30px;
-    opacity: 33%;
-    
-    display: flex;
-    
-    z-index: 30;
-}
-
-.mouse a {
-    position: absolute;
-    bottom: 0px;
-    left: 00%;
-    z-index: 40;
-    display: inline-block;
-    -webkit-transform: translate(0, -50%);
-    color: #fff;
-    font : normal 400 20px/1 'Josefin Sans', sans-serif;
-    letter-spacing: .1em;
-    text-decoration: none;
-    transition: opacity .3s;
-    
-    overflow: hidden;
-    position: absolute;
-    border-radius:30px;
-    opacity: 33%;
-    
-    z-index: 30;
-    cursor: pointer !important;
-}
-
-.demo a:hover {
-    opacity: .5;
-}
-
-.mouse::after {
-    display: block;
-    content:"";
-    position:absolute;
-    left:11px;
-    top:10px;
-    width:4px;
-    height:4px;
-    margin-left: -3px;
-    background-color:white;
-    border-radius:2px;
-    animation: mouse-wheel 2.5s cubic-bezier(0.77, 0, 0.175, 1) infinite;
-}
-
-@keyframes mouse-wheel {
-    0% {
-        transform: translateY(0);
-        opacity: 0;
-    }  
-    10% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-    30% {
-        transform: translateY(0);
-        height: 4px;
-    }
-    50% {
-        transform: translateY(0);
-        height: 20px;
-    }
-    70% {
-        transform: translateY(15px);
-        height: 4px;
-        opacity: 1;
-    }
-    90% {
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(15px);
-        opacity: 0;
-    }
-}
-
-#section01 a {
-    padding-top: 60px;
-    
-}
-#section01 a span {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 24px;
-    height: 24px;
-    margin-left: -12px;
-    border-left: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    box-sizing: border-box;
-}
-
-#section02 a {
-    padding-top: 60px;
-}
-#section02 a span {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 46px;
-    height: 46px;
-    margin-left: -23px;
-    border: 1px solid #fff;
-    border-radius: 100%;
-    box-sizing: border-box;
-}
-#section02 a span::after {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    content: '';
-    width: 16px;
-    height: 16px;
-    margin: -12px 0 0 -8px;
-    border-left: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    box-sizing: border-box;
-} */
-
-.fancybox {
-    position: relative;
-    z-index: 0;
-    cursor: pointer;
-    }
-
-.fancybox-toolbar {
-    pointer-events: none;
-}
-
-.cursor-pointer {
-    cursor: pointer;
 }
 
 @media only screen and (max-width: 1675px) {
@@ -349,8 +207,8 @@
     }
 
     #description-text {
-        margin-top: 80px;
-        font-size: 40px;
+        /* margin-top: 80px; */
+        font-size: 32px;
     }
 }
 
@@ -389,8 +247,8 @@
     }
 
     #description-text {
-        margin-top: 80px;
-        font-size: 40px;
+        /* margin-top: 80px; */
+        font-size: 32px;
     }
 
     #icon-main {
@@ -494,8 +352,8 @@
     }
 
     #description-text {
-        margin-top: 80px;
-        font-size: 30px;
+        /* margin-top: 80px; */
+        font-size: 28px;
     }
 
     #desc {
@@ -664,13 +522,21 @@
     #desc {
         padding: 20px;
         padding-bottom: 80px;
-        padding-left: 5px;
-        padding-right: 5px;
-        text-align: center;
+        text-align: left;
     }
 }
 
 @media only screen and (max-width: 500px) {
+    #welcome-text-wrapper {
+        margin-top: 470px;
+        margin-left: 0px;
+    }
+
+    .morphing {
+        font-size: 60px;
+        margin-top: 450px;
+    }
+
     #icon-main {
         margin-top: 100px;
         min-width: 450px;
@@ -695,6 +561,7 @@
     }
 
     #desc {
+        padding: 20px;
         padding-top: 140px;
         padding-bottom: 140px;
     }
@@ -708,7 +575,7 @@
     }
 
     #welcome-text-wrapper {
-        margin-top: 590px;
+        margin-top: 460px;
         margin-left: 0px;
     }
     
@@ -723,7 +590,7 @@
 
     .morphing {
         font-size: 50px;
-        margin-top: 570px;
+        margin-top: 440px;
     }
 
     .hello-icon {
@@ -741,7 +608,7 @@
     }
 
     #description-text {
-        font-size: 24px;
+        font-size: 20px;
         overflow: hidden;
     }
 
@@ -753,7 +620,7 @@
 
 @media only screen and (max-width: 415px) {
     #welcome-text-wrapper {
-        margin-top: 608px;
+        margin-top: 480px;
     }
     
     #welcome-to-text {
@@ -761,7 +628,7 @@
     }
 
     #description-text {
-        font-size: 24px;
+        font-size: 20px;
         overflow: hidden;
     }
 
@@ -820,7 +687,7 @@
     }
     
     #description-text {
-        font-size: 20px;
+        font-size: 16px;
         overflow: hidden;
     }
 
@@ -924,8 +791,8 @@
     
     #description-text {
         font-family: 'Jost', serif;
-        font-size: 30px;
-        margin-top: 200px;
+        font-size: 28px;
+        /* margin-top: 200px; */
         width: 100%;
     }
     
@@ -1169,8 +1036,8 @@
     
     #description-text {
         font-family: 'Jost', serif;
-        font-size: 30px;
-        margin-top: 200px;
+        font-size: 28px;
+        /* margin-top: 200px; */
         width: 100%;
     }
     
@@ -1241,8 +1108,8 @@
     
     #description-text {
         font-family: 'Jost', serif;
-        font-size: 20px;
-        margin-top: 60px;
+        font-size: 16px;
+        /* margin-top: 60px; */
         width: 100%;
     }
     
@@ -1313,8 +1180,8 @@
     
     #description-text {
         font-family: 'Jost', serif;
-        font-size: 20px;
-        margin-top: 60px;
+        font-size: 16px;
+        /* margin-top: 60px; */
         width: 100%;
     }
     

@@ -1,0 +1,238 @@
+* {
+    border: none !important
+}
+
+/* Documents */
+.card-list {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    -webkit-animation: fadein2 3s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein2 3s; /* Firefox < 16 */
+    -ms-animation: fadein2 3s; /* Internet Explorer */
+    -o-animation: fadein2 3s;  /* Opera < 12.1 */
+    animation: fadein2 3s;
+}
+
+#short {
+    height: 15%;
+}
+
+.card {
+    background: linear-gradient(45deg, #0A0A0A, #221E22);
+    width: 360px;
+    height: 260px;
+    box-shadow: 8px 8px 0px #221E22;
+    border-radius: 0px;
+    filter: drop-shadow(0px 0px 11px #EC8609);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 30px;
+    
+    -webkit-animation: fadein3 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein3 2s; /* Firefox < 16 */
+    -ms-animation: fadein3 2s; /* Internet Explorer */
+    -o-animation: fadein3 2s; /* Opera < 12.1 */
+    animation: fadein3 2s;
+    transition: ease-in-out .25s;
+}
+
+.card-standout {
+    filter: drop-shadow(0px 0px 11px #aacc00);
+}
+
+.card-standout:hover {
+    filter: drop-shadow(0px 0px 33px #aacc00) !important;
+}
+
+.card:hover {
+    filter: drop-shadow(0px 0px 33px #EC8609);
+    transition: ease-in-out .25s;
+}
+
+.card-video {
+    width: 360px;
+    height: 360px;
+}
+
+/* Document Text */
+.card-title  {
+    color: #F1F1F1;
+    font-size: 22px;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    line-height: 1;
+    transition: ease-in-out .25s;
+
+    padding: 12px 0px 0px 12px;
+    width: auto;
+}
+
+.card-title:hover {
+    color: #EC8609;
+    transition: ease-in-out .25s;
+}
+
+.ext-link-icon:hover {
+    transform: scale(125%);
+    transition: linear .25s;
+}
+
+.card-desc {
+    color: #E3E3E3;;
+    text-align: left;
+
+    font-family: 'Josefin Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+
+    padding: 0px 12px 0px 12px;
+}
+
+.card-header {
+    height: 90%;
+    margin: 0;
+    padding: 0;
+}
+
+.card-footer {
+    color: #F1F1F1;
+    font-family: 'Alata', sans-serif;
+    text-align: right;
+
+    height: 10%;
+    padding: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.card-btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-header-btns {
+    height: auto;
+}
+
+.card-btns-title {
+    padding: 4px 0px 0px 0px;
+    text-align: center;
+}
+
+.card-btn {
+    padding: 8px 12px 8px 12px;
+    background-color: #0A0A0A;
+    /* border-radius: 20px; */
+    line-height: 2;
+    font-size: 16px;
+
+    cursor: pointer !important;
+}
+
+.preview-imgs {
+    padding: 0px 0px 12px 0px;
+
+    display: flex;
+    justify-content: flex-start;
+}
+
+.preview-img-icon {
+    object-fit: cover;
+    width: 48px;
+    height: 48px;
+    margin-left: 10px;
+    
+    border: 2px solid white !important;
+
+    cursor: pointer !important;
+}
+
+.player-info {
+    padding: 0px 12px 12px 0px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.player-count {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.1;
+}
+
+.info {
+    padding: 0px 4px 4px 0px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.info-text {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.1;
+    text-align: right;
+}
+
+.two-row {
+    padding-right: 2px;
+}
+
+.players-icon {
+    width: 24px;
+}
+
+.important-text {
+    color: #E61E25;
+}
+
+.linked-text {
+    color: #F8AB4C;
+}
+
+.ext-link-icon {
+    width: 20px;
+    margin-left: 4px;
+    margin-bottom: 4px;
+    transition: ease-in-out 0.25s;
+    cursor: pointer !important;
+}
+
+.play-video-icon {
+    width: 20px;
+    margin-left: 4px;
+    margin-bottom: 4px;
+    transition: ease-in-out 0.25s;
+    cursor: pointer !important;
+}
+
+#players-info {
+    display: flex;
+    width: 50%;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .disclaimer {
+        margin: 0px 30px 0px 30px;
+    }
+
+    #short {
+        height: 10%;
+    }
+}

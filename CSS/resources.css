@@ -1,58 +1,19 @@
-/* Page */
-
-/* Disclaimer */
-.disclaimer {
-    background-color: #1F1F1F;
-    width: 100vw;
-    margin: 50px 50px 50px 50px;
-    padding: 15px 15px 15px 15px;
-    box-shadow: 10px 10px 0px #221E228b;
-    filter: drop-shadow(0px 0px 9px #EC8609);
-    transition: ease-in-out .25s;
-    color: #EC8609;
-    font-size: 20px;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 800;
-    line-height: 1;
-}
-
-/* Tags Selector */
-
-/* Docs Whitespace (Below) */
-.docs-whitespace {
-    width: 100%;
-    margin: 50px 50px 50px 50px;
-    padding: 15px 15px 15px 15px;
-    transition: ease-in-out .25s;
-    font-size: 20px;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 800;
-    line-height: 1;
-}
-
 /* Documents */
-.doc-list {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-content: flex-start;
-    flex-wrap: wrap;
+.card-list {
+    animation: none !important;
 }
 
-.doc {
+.card {
     background: linear-gradient(45deg, #0A0A0A, #221E22);
-    min-width: 250px;
-    max-width: 250px;
+    min-width: 300px;
+    max-width: 300px;
     height: 300px;
     box-shadow: 10px 10px 0px #221E22,
     20px 20px 0px #221E224b;
     filter: drop-shadow(0px 0px 9px #EC8609);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     transition: ease-in-out .25s;
     margin: 30px;
     
@@ -64,7 +25,7 @@
     z-index: 2;
 }
 
-.doc-bg-img {
+.card-bg-img {
     width: 275px;
     height: 300px;
     position: absolute;
@@ -110,21 +71,54 @@
 
 #browser-games-bg {
     filter: brightness(50%) blur(1px);
-    transform: rotate(-45deg);
-    background: url(https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80.png);
+    /* transform: rotate(-45deg); */
+    background: url(https://lh3.google.com/u/0/d/19usRfKolM3ipB4X_0e0xoSJ_CLpQp2MX=w1032-h528-iv3);
     background-size: cover;
     position: absolute;
-    scale: 150%;
-    background-position: 90% 40%;
+    scale: 110%;
+    background-position: 50% 80%;
     transition: height 2s, width 2s;
 }
 
-.doc:hover {
+#peritune-music-materials-bg {
+    filter: brightne ss(50%) blur(1px);
+    transform: rotate(-40deg);
+    background: url(https://yt3.ggpht.com/3zV5scB_QkGTu1t-Th7PaFLFp3Oi_kFfD1-me56OZG4eJiccWfX5ahgCBl1Dz1JzIu18xPol=s900-c-k-c0x00ffffff-no-rj);
+    background-size: cover;
+    position: absolute;
+    scale: 140%;
+    background-position: 20% 100%;
+    transition: height 2s, width 2s;
+}
+
+#royalty-free-music-chart-bg {
+    filter: brightness(50%) blur(1px);
+    transform: rotate(-15deg);
+    background: url(https://lh3.google.com/u/0/d/1bFPxmTt1Es3FfdVtLZ1lgPH9_nAZ7Ezm=w1032-h528-iv1);
+    background-size: cover;
+    position: absolute;
+    scale: 120%;
+    background-position: 10% 0%;
+    transition: height 2s, width 2s;
+}
+
+#language-learning-resources-bg {
+    filter: brightness(50%) blur(1px);
+    transform: rotate(-15deg);
+    background: url(#);
+    background-size: cover;
+    position: absolute;
+    scale: 120%;
+    background-position: 10% 0%;
+    transition: height 2s, width 2s;
+}
+
+.card:hover {
     filter: drop-shadow(0px 0px 33px #EC8609);
     transition: ease-in-out .25s;
 }
 
-.doc a span { 
+.card a span { 
     position: absolute; 
     width:100%;
     height:100%;
@@ -134,9 +128,9 @@
     z-index: 4;
 }
 
-.doc-info {
+.card-info {
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif !important;
     font-weight: Bold;
     display: flex;
     flex-direction: column;
@@ -144,27 +138,34 @@
 }
 
 /* Document Text */
-.doc-title  {
+.card-title  {
     color: #F1F1F1;
-    margin: 10px 0px 10px 0px;
+    margin: 10px 0px 10px 0px !important;
     text-align: center;
-    font-size: 26px;
-    font-family: 'Cinzel', sans-serif;
+    font-size: 24px !important;
+    font-family: 'Cinzel', 'Poppins', sans-serif !important;
+    text-transform: uppercase;
     font-weight: 800;
     line-height: 1;
     z-index: 4;
 }
 
-.doc-desc {
+.card-desc {
     color: #E3E3E3;
     margin: 0;
     text-align: center;
-    font-family: 'Alata';
-    padding: 5px;
+    font-family: 'Alata' !important;
+    padding: 8px !important;
     font-weight: 400;
     line-height: 1.25;
     z-index: 4;
+    font-size: inherit !important;
 
+}
+
+.title-emoji {
+    /* font-size: 24px !important; */
+    display: none;
 }
 
 #link-email {
@@ -197,7 +198,7 @@
     box-shadow: 0 8px 32px 0 #0A0A0A;
     backdrop-filter: blur( 6.5px );
     -webkit-backdrop-filter: blur( 6.5px );
-    border: 2px solid #EC8609;
+    border: 2px solid #EC8609 !important;
 
     -webkit-animation: fadein3 1s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein3 1s; /* Firefox < 16 */
@@ -286,7 +287,7 @@
 /* Media Queries */
 
 @media only screen and (max-width: 1000px) {
-    .doc-list {
+    .card-list {
         justify-content: center;
         padding-right: 20px;
     }
@@ -313,17 +314,17 @@
 }
 
 @media only screen and (max-width: 650px) {
-    .doc {
+    .card {
         min-width: 400px;
         max-width: 400px;
     }
     
-    .doc-bg-img {
+    .card-bg-img {
         transform: scale(150%);
         margin-left: 70px;
     }
 
-    .doc-list {
+    .card-list {
         margin-left: 6px;
     }
 
@@ -342,12 +343,12 @@
 }
 
 @media only screen and (max-width: 500px) {
-    .doc {
+    .card {
         min-width: 90vw;
         max-width: 90vw;
     }
 
-    .doc-bg-img {
+    .card-bg-img {
         transform: scale(120%);
         margin-left: 60px;
     }
@@ -362,12 +363,12 @@
 }
 
 @media only screen and (max-width: 500px) {
-    .doc {
+    .card {
         min-width: 90vw;
         max-width: 90vw;
     }
 
-    .doc-bg-img {
+    .card-bg-img {
         transform: scale(130%);
         margin-left: 80px;
     }
@@ -382,12 +383,13 @@
 }
 
 @media only screen and (max-width: 450px) {
-    .doc {
+    .card {
+        margin: 24px 8px 24px 8px;
         min-width: 90vw;
         max-width: 90vw;
     }
 
-    .doc-bg-img {
+    .card-bg-img {
         transform: scale(120%);
         margin-left: 60px;
     }
@@ -402,12 +404,12 @@
 }
 
 @media only screen and (max-width: 400px) {
-    .doc {
+    .card {
         min-width: 90vw;
         max-width: 90vw;
     }
 
-    .doc-bg-img {
+    .card-bg-img {
         transform: scale(120%);
         margin-left: 10%;
     }
@@ -422,12 +424,12 @@
 }
 
 @media only screen and (max-width: 350px) {
-    .doc {
+    .card {
         min-width: 90vw;
         max-width: 90vw;
     }
 
-    .doc-bg-img {
+    .card-bg-img {
         transform: scale(120%);
         margin-left: 05%;
     }

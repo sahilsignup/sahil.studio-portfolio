@@ -1,0 +1,266 @@
+.tag-centre {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tag-display {
+    display: inline-block;
+}
+
+.container-bg {
+    padding: 20px;
+    width: fit-content;
+    height: 100%;
+}
+
+.form-control, .form-control:focus {
+    background-color: #0A0A0A;
+    color: #F1F1F1;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    border-radius: 0;
+}
+
+main,
+footer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    height: auto;
+    border: 2px solid #F1F1F1 !important;
+}
+
+.table-overflow-wrapper {
+    overflow-x: auto;
+    cursor: auto;
+    margin: 20px 20px 20px 20px;
+    max-height: 60vh;
+    max-width: 100%;
+    background-color: #0A0A0A8b;
+    display: flex;
+}
+
+table th,
+table td {
+    padding: 1em 0.5em;
+    padding-top: 14px !important;
+    padding-bottom: 14px !important;
+    position: relative;
+    border: 2px solid #F1F1F1 !important;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #F1F1F1;
+}
+
+table th {
+    font: 400 1.25em/1 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #F1F1F1;
+    padding: 20px 48px 20px 8px !important;
+    white-space: nowrap;
+    text-align: left;
+    /* text-transform: uppercase; */
+    transition: color 0.5s ease-in-out;
+    cursor: pointer !important;
+}
+
+table th:hover,
+table th:focus {
+    color: #EC8609;
+}
+
+table th:hover,
+table th:focus {
+    color: #EC8609;
+}
+
+/* Arrows */
+table th:after,
+table th:before {
+  border: 0.35em solid transparent;
+  content: '';
+  height: 0; 
+  position: absolute;
+  right: 0.65em;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: border-color 0.2s ease-in-out;
+  width: 0;
+  cursor: pointer !important;
+  
+}
+
+.tablesorter-header-inner {
+    cursor: pointer !important;
+}
+
+table th:before {
+    border-bottom-color: #F1F1F1;
+    border-top: 0 !important;
+    margin-top: -0.35em !important;
+}
+
+table th:after {
+    border-bottom: 0 !important;
+    border-top-color: #F1F1F1;
+    margin-top: 0.35em !important;
+    
+}
+
+table th:hover:before,
+table th:focus:before {
+    border-bottom-color: #F1F1F1;
+}
+
+table th:hover:after,
+table th:focus:after {
+    border-top-color: #F1F1F1;
+}
+
+table th[aria-sort="ascending"],
+table th[aria-sort="descending"] {
+    color: #EC8609;
+}
+
+table th[aria-sort="ascending"]:before {
+    border-bottom-color: #EC8609;
+}
+
+table th[aria-sort="ascending"]:after {
+    border-top-color: #F1F1F1;
+}
+
+table th[aria-sort="descending"]:before {
+    border-bottom-color: #F1F1F1;
+}
+
+table th[aria-sort="descending"]:after {
+    border-top-color: #EC8609;
+}
+
+/*** BODY ***/
+table tbody > tr {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5) !important;
+    transition: background-color 0.5s ease-in-out, border-color 0.5s ease-in-out;
+    background-color: #0A0A0A8b;
+}
+
+table tbody > tr:hover {
+    background-color: #f9ac4e8e;
+    border-color: rgba(255, 255, 255, 1);
+    color: #fff;
+}
+
+/* Tag Name Cell */
+table td[data-label="Tag"],
+table td[data-label="Category"] {
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+/* Check and Cross Marks */
+table tr span.yes,
+table tr span.no {
+    transition: all 0.2s ease-in-out;
+}
+
+table tr:hover span.yes,
+table tr:hover span.no {
+    color: #fff;
+}
+
+table span.yes {
+    color: #a2ed56;
+    font-size: 1.25em;
+}
+
+table span.no {
+    color: #fd6470;
+    font-size: 0.875em;
+}
+
+/************************************************/
+/***************** MEDIA QUERIES ****************/
+/************************************************/
+
+@media screen and (max-width: 800px) {
+    th {
+        min-width: 100% !important;
+    }
+
+    .table-text {
+        text-align: left;
+    }
+
+    .tag-centre {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    audio {
+        width: 100%;
+    }
+}
+
+@media (max-width: 50em) {
+    
+    /*** TABLE ***/
+    
+    table tr,
+    table td {
+        display: block;
+    }
+    
+    table tr {
+        padding: 0.75em 0;
+    }
+    
+    /* Header */
+    table thead tr {
+        text-align: center;
+    }
+    
+    table th {
+        display: block;
+        padding: 0.25em 0.5em;
+    }
+    
+    /* Body */
+    table td {
+        padding: 0.25em 0.5em 0.25em 6.5em;
+    }
+    
+    table td:before {
+        content: attr(data-label);
+        font: 400 1.125em/1 'Alata', 'Oswald', sans-serif;
+        position: relative;
+        width: 100%;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Check and Cross Marks */
+    table span.yes {
+        line-height: 0.875;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    audio {
+        min-width: 10px !important;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .container-bg {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

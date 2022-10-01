@@ -1,0 +1,108 @@
+.card-list {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    max-width: 90% !important;
+}
+
+.disclaimer-wrapper {
+    width: 80%;
+    padding: 0px;
+    margin: 0 auto;
+}
+
+.disclaimer {
+    margin: 40px 0px 0px 0px !important;
+}
+
+.card-bg-img {
+    left: 0;
+    width: 360px;
+    height: 260px;
+    position: absolute;
+    z-index: 1;
+    /* opacity: .11; */
+    background-size: contain;
+    -webkit-animation: fadeinbgimg 4s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadeinbgimg 4s; /* Firefox < 16 */
+    -ms-animation: fadeinbgimg 4s; /* Internet Explorer */
+    -o-animation: fadeinbgimg 4s; /* Opera < 12.1 */
+    animation: fadeinbgimg 0s;
+}
+
+#peritune-tutorial-video-bg {
+    /* filter: brightness(75%) blur(2.5px); */
+    background: url(https://img.youtube.com/vi/yC93t0pXXhk/maxresdefault.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    object-fit: contain;
+    transition: height 2s, width 2s;
+}
+
+.thumbnail-overlay {
+    position: absolute;
+    pointer-events: none;
+}
+
+audio {
+    display: block;
+    min-width: 400px;
+    max-height: 40px;
+}
+
+.tag-genre-and-theme {
+    background-color: #F691B2;
+    color: black;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+.tag-genre-and-theme-world {
+    background-color: #EE5776;
+    color: black;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+.tag-genre-and-theme-instrument {
+    background-color: #F453C3;
+    color: black;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+.tag-mood {
+    background-color: #FFE660;
+    color: black;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+.col-number {
+    max-width: 40px;
+    min-width: 40px;
+}
+
+.col-tag {
+    max-width: 140px;
+}
+
+@media screen and (max-width: 500px) {
+    .card {
+        margin: 8px 0px 8px 0px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .card {
+        transform: scale(90%);
+        min-width: 360px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .card {
+        transform: scale(80%);
+    }
+}

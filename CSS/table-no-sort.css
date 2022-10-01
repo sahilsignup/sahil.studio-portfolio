@@ -1,0 +1,162 @@
+.container-bg {
+    background-color: #0A0A0A8b;
+    /* border-radius: 20px; */
+    padding: 20px;
+    min-width: 90vw;
+}
+
+.form-control, .form-control:focus {
+    background-color: #0A0A0A;
+    color: #F1F1F1;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    border-radius: 0;
+}
+
+main,
+footer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 64em;
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    height: auto;
+    border: 2px solid #F1F1F1 !important;
+    margin: 0 auto;
+}
+
+.table-overflow-wrapper {
+    overflow-x: auto;
+    margin: 20px 80px 20px 80px;
+    max-height: 60vh;
+    cursor: auto;
+    width: 90.5vw;
+    margin: 0 auto;
+}
+
+table th,
+table td {
+    padding: 1em 0.5em;
+    padding-top: 14px !important;
+    padding-bottom: 14px !important;
+    position: relative;
+    border: 2px solid #F1F1F1 !important;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #F1F1F1;
+}
+
+table th {
+    font: 400 1.25em/1 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #F1F1F1;
+    text-align: left;
+    white-space: nowrap;
+    /* text-transform: uppercase; */
+    transition: color 0.5s ease-in-out;
+}
+
+table th:hover,
+table th:focus {
+    color: #EC8609;
+}
+
+/*** BODY ***/
+table tbody > tr {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5) !important;
+    transition: background-color 0.5s ease-in-out, border-color 0.5s ease-in-out;
+    background-color: #0A0A0A8b;
+}
+
+table tbody > tr:hover {
+    background-color: #f9ac4e8e;
+    border-color: rgba(255, 255, 255, 1);
+    color: #fff;
+}
+
+/* Tag Name Cell */
+table td[data-label="Tag"] {
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+/* Check and Cross Marks */
+table tr span.yes,
+table tr span.no {
+    transition: all 0.2s ease-in-out;
+}
+
+table tr:hover span.yes,
+table tr:hover span.no {
+    color: #fff;
+}
+
+table span.yes {
+    color: #a2ed56;
+    font-size: 1.25em;
+}
+
+table span.no {
+    color: #fd6470;
+    font-size: 0.875em;
+}
+
+/************************************************/
+/***************** MEDIA QUERIES ****************/
+/************************************************/
+        
+@media (max-width: 50em) {
+    
+    /*** TABLE ***/
+    
+    table tr,
+    table td {
+        display: block;
+    }
+    
+    table tr {
+        padding: 0.75em 0;
+    }
+    
+    /* Header */
+    table thead tr {
+        text-align: center;
+    }
+    
+    table th {
+        display: block;
+        padding: 0.25em 0.5em;
+    }
+    
+    /* Body */
+    table td {
+        padding: 0.25em 0.5em 0.25em 6.5em;
+    }
+    
+    table td:before {
+        content: attr(data-label);
+        font: 400 1.125em/1 'Alata', 'Oswald', sans-serif;
+        position: relative;
+        width: 100%;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* Animal Cells */
+    table td[data-label="Chickens"],
+    table td[data-label="Pigs"],
+    table td[data-label="Snakes"] {
+        text-align: left;
+    }
+    
+    /* Check and Cross Marks */
+    table span.yes {
+        line-height: 0.875;
+    }
+}

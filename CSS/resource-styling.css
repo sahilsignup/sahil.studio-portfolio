@@ -1,0 +1,338 @@
+/* Page Content */
+
+#content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    z-index: 2;
+}
+
+.hyperlink {
+    color: #F9AC4E;
+}
+
+a {
+    color: #F1F1F1;
+    text-decoration: none;
+    transition: ease-in-out .5s;
+    cursor: pointer !important;
+}
+
+a:hover {
+    color: #EC8609;
+}
+
+.title-separator {
+    width: 200px;
+    margin: 40px;
+    color: #F1F1F1;
+    /* opacity: 66%; */
+    
+    /* -webkit-animation: fadein2 5s;  Safari, Chrome and Opera > 12.1 
+    -moz-animation: fadein2 5s;  Firefox < 16 
+    -ms-animation: fadein2 5s;  Internet Explorer 
+    -o-animation: fadein2 5s;  Opera < 12.1 
+    animation: fadein2 5s; */
+}
+
+#title-screen {
+    height: 100%;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    /* background-color: blue; */
+    /* z-index: 11; */
+    
+    -webkit-animation: fadein3 4s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein3 4s; /* Firefox < 16 */
+    -ms-animation: fadein3 4s; /* Internet Explorer */
+    -o-animation: fadein3 4s; /* Opera < 12.1 */
+    animation: fadein3 4s;
+    
+    z-index: 2;
+}
+
+#resource-details {
+    height: auto;
+    width: 100%;
+    padding-top: 100px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    /* background-color: blue; */
+    /* z-index: 11; */
+}
+
+
+.title {
+    position: relative;
+    font-family: 'Cinzel Decorative', 'Cinzel', 'Times New Roman', Times, serif;
+    font-weight: 900;
+    padding: 0px 40px 0px 40px;
+    color: #EC8609;
+    filter: drop-shadow(0px 0px 33px #F9AC4E);
+    line-height: 1;
+    
+    font-size: 116px;
+    text-align: center;
+    
+    /* -webkit-animation: fadein3 4s; /* Safari, Chrome and Opera > 12.1
+    -moz-animation: fadein3 4s; Firefox < 16
+    -ms-animation: fadein3 4s;* Internet Explorer
+    -o-animation: fadein3 4s;  Opera < 12.1 
+    animation: fadein3 4s; */
+    
+    /* background-image:url("https://media.giphy.com/media/xVn3ZmKrKIOLS/giphy.gif");
+    background-size: contain;
+    background-position: top left;
+    -webkit-background-clip: text; */
+    
+    background: linear-gradient(110deg, #EC8609 0%, #EC8609 8%, #FABA6D 10%, #EC8609 12%, #EC8609 20%);
+    background-position: 0;
+    background-size:300% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 6s infinite linear;
+    animation-fill-mode: none;
+    -webkit-text-size-adjust: none;
+}
+@keyframes shine {
+    0% {
+        background-position: -1000px
+    }
+    100% {
+        background-position: 2000px
+    }
+}
+
+.subtitle {
+    position: relative;
+    font-family: 'Cinzel', serif;
+    font-weight: 500;
+    color: #EC8609;
+    filter: drop-shadow(0px 0px 33px #F9AC4E);
+    line-height: 1;
+    
+    font-size: 48px;
+    text-align: center;
+    padding: 0px 80px 0px 80px;
+    
+    -webkit-animation: fadein3 6s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein3 6s; /* Firefox < 16 */
+    -ms-animation: fadein3 6s; /* Internet Explorer */
+    -o-animation: fadein3 6s; /* Opera < 12.1 */
+    animation: fadein3 6s;
+}
+
+h1 {
+    /* position: relative; */
+    font-family: 'Bodoni Moda', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #EC8609;
+    /* filter: drop-shadow(0px 0px 33px #F9AC4E); */
+    line-height: 1.4;
+    /* padding-bottom: 20px; */
+    
+    font-size: 48px;
+    text-align: center;
+    /* text-transform: uppercase; */
+}
+
+h2 {
+    /* position: relative; */
+    font-family: 'Bodoni Moda', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #EC8609;
+    /* filter: drop-shadow(0px 0px 33px #F9AC4E); */
+    line-height: 1.2;
+    
+    font-size: 32px;
+    text-align: center;
+    /* text-transform: uppercase; */
+}
+
+h5 {
+        font-family: 'Poppins';
+        font-weight: 300;
+        color: #F1F1F1;
+        line-height: 1.4;
+        font-size: 24px;
+}
+
+h6 {
+        font-family: 'Poppins';
+        font-weight: 700;
+        color: #EC8609;
+        line-height: 1.4;
+        font-size: 20px;
+}
+
+p {
+    /* position: relative; */
+    font-family: 'Poppins';
+    font-weight: 300;
+    color: #F1F1F1;
+    line-height: 1.4;
+    
+    font-size: 20px;
+    text-align: center;
+}
+
+.resource-text-col {
+    display: flex;
+    justify-content: center;
+}
+
+.resource-text-single {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-color: #0A0A0A6b;
+}
+
+.resource-text {
+    width: 35%;
+    margin: 0px 40px 0px 40px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+
+    background-color: #0A0A0A6b;
+}
+
+
+@media screen and (max-width: 1300px) {
+    .resource-text {
+        width: 100%;
+    }
+
+    .resource-text > p {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 40px;
+        line-height: 1;
+    }
+
+    .title {
+        font-size: 92px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .resource-text-col {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .resource-text {
+        width: 80%;
+        padding: 8px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .subtitle {
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 84px;
+    }
+}
+
+@media screen and (max-width: 775px) {
+    .title {
+        font-size: 66px;
+    }
+
+    .subtitle {
+        font-size: 40px;
+    }
+
+    .title-separator {
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .resource-text {
+        font-size: 14px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 530px), (max-height: 700px) {
+    .title {
+        font-size: 60px;
+        padding: 10px;
+    }
+    
+    .subtitle {
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .title {
+        font-size: 50px;
+        padding: 10px;
+    }
+    
+    .subtitle {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .title {
+        font-size: 48px;
+        padding: 10px;
+    }
+    
+    .subtitle {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .title {
+        font-size: 40px;
+        padding: 10px;
+    }
+    
+    .subtitle {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .title {
+        font-size: 40px;
+        padding: 10px;
+    }
+    
+    .subtitle {
+        font-size: 24px;
+    }
+}
